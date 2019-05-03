@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipestyle SYSTEM "ipe.dtd">
+<ipestyle name="font-selection">
+<preamble>
+\makeatletter
+\usepackage{etoolbox}
+
+\usepackage[T1]{fontenc}
+\usepackage{noto}
+\usepackage{lato}
+\usepackage{inconsolata}
+\usepackage{fouriernc}
+
+\def\familydefault{\sfdefault}
+\def\rmdefault{NotoSerif-TOsF}
+\def\sfdefault{lato-TOsF}
+\def\ttdefault{zi4}
+\def\zifour@scaled{s*[0.925]}
+\def\zifour@narrow{}
+\def\zifour@opt{0}
+\def\zifour@altopt{2}
+\def\zifour@spc{\hyphenchar\font=\m@ne}
+
+\usepackage{mweights}
+\def\mdseries@rm{l}
+\def\bfseries@rm{eb}
+\def\mdseries@sf{l}
+\def\bfseries@sf{eb}
+
+\newrobustcmd\selectweight[1]{\fontseries{#1}\selectfont}
+
+\usepackage{setspace}
+\setstretch{1.2}
+
+% Setup math fonts and symbols
+\usepackage{fdsymbol}
+\usepackage{fontawesome}
+\usepackage[%
+    activate={true,nocompatibility},final,tracking=true,letterspace=40,%
+    kerning=true,spacing=true,factor=1150,stretch=15,shrink=15%
+]{microtype}
+\microtypecontext{spacing=nonfrench}
+
+\makeatother
+</preamble>
+</ipestyle>

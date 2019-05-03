@@ -1,0 +1,105 @@
+\question{\bfseries Polymer Chain}
+
+\subsection*{\sectionfont\upshape Background}
+
+ในห้องปฏิบัติการวิจัยเคมีแห่งหนึ่ง มีการทดลอง Simulation การเปลี่ยนแปลงโครงสร้างสาย polymer 
+ชื่อ polymer $K$ ซึ่งประกอบไปด้วยอะตอมหลากหลายชนิดเรียงตัวเป็นเส้นตรง
+
+ในคอมพิวเตอร์ เราจะแทนอะตอมแต่ละชนิดด้วยอักขระ \verb|"A"| ถึง \verb|"Z"| 
+และเราจะแทน polymer \lstinline{K} ที่มีความยาว $N$ ด้วยสตริงที่ประกอบไปด้วยอักขระ 
+\verb|"A"| ถึง \verb|"Z"| ความยาว $N$ ตัว
+
+ในห้องปฏิบัติการดังกล่าว ยังมีเครื่องจัดเรียง polymer ที่มีชื่อว่า
+\begin{center}
+    \lstinline{manipulate_polymer_once(K[0...N-1], p)} 
+\end{center} 
+ซึ่งมี Specification ในการทำงานดังต่อไปนี้
+
+\begin{fullwidth}
+    \vspace{2\baselineskip}
+    \begin{quote}
+        หาก input string \lstinline{K} ของฟังก์ชัน \lstinline{manipulate_polymer_once}
+        คือลำดับของอักขระ \verb|K[0]|, \verb|K[1]|, \ldots, \verb|K[N-1]| ตามลำดับ 
+        และ \lstinline{p} คือ index ของสตริง \lstinline{K} โดยที่ \lstinline{0 <= p <= N-1} 
+        แล้ว ฟังก์ชันนี้จะ return ค่าสตริงซึ่งประกอบด้วยอักขระต่อไปนี้ตามลำดับ
+        \[
+            \underbrace{\text{\ttfamily K[p-1], K[p-2], \ldots, K[1], K[0],}}_\text{exists if $p > 0$}
+            \text{\ttfamily K[p],} 
+            \underbrace{\text{\ttfamily K[N-1], K[N-2], \ldots, K[p+2], K[p+1]}}_\text{exists if $p < N-1$}
+        \]    
+        ยกตัวอย่างเช่น ถ้า input ของ \lstinline{manipulate_polymer_once} ได้แก่ 
+        \lstinline{K = "ASDFGHJKL"} และ \lstinline{p = 3}\;
+        จะได้ output string เป็น \lstinline{"DSAFLKJHG"}\;
+        สังเกตว่า \verb|F| จะอยู่ในตำแหน่งเดิมไม่เปลี่ยนแปลง แต่สตริงย่อยที่อยู่ข้างหน้าและข้างหลังจะถูกเรียงกลับหลัง
+    \end{quote}
+    \vspace{2\baselineskip}
+\end{fullwidth}
+
+ในการทำการทดลอง Simulation จริง เราจะนำ polymer สายหนึ่งมาจัดเรียงใหม่ไปเรื่อย ๆ 
+อย่างต่อเนื่องเป็นจำนวน $M$ ครั้ง โดยปรับเปลี่ยน parameter ไปเรื่อย ๆ เช่น ถ้า polymer ตั้งต้นคือ 
+\lstinline{K = "ASDFGHJKL"} และค่า parameter ของการจัดเรียง $M = 3$ ครั้งอย่างต่อเนื่องคือ 
+\lstinline{p_1 = 3}, \lstinline{p_2 = 6}, \lstinline{p_3 = 0} เราจะได้ Polymer ผลลัพธ์เป็น
+\begin{center}
+    \texttt{ASDFGHJKL → DSAFLKJHG → KLFASDJGH → KHGJDSAFL}
+\end{center}
+
+\subsection*{\sectionfont\upshape Problem Statement}
+
+จงเขียนโปรแกรมเพื่อทำ Simulation ของการจัดเรียง polymer สายหนึ่งด้วยลำดับของพารามิเตอร์ที่กำหนดให้ 
+แล้วหาว่า polymer ผลลัพธ์สุดท้ายมีหน้าตาเป็นอย่างไร
+
+\newpage
+\subsection*{\sectionfont\upshape Program Specification}
+
+โปรแกรมที่คุณเขียนจะต้องอ่านข้อมูลจาก stardard input 
+และเขียนคำตอบลง standard output โดยข้อมูลจะมีฟอร์แมตดังต่อไปนี้
+
+\bigskip\noindent
+{\sectionfont\bfseries Input Format}
+\begin{itemize}
+\item บรรทัดที่ 1: มีจำนวนเต็มสองจำนวน $N$ และ $M$ คั่นด้วยช่องว่าง
+\item บรรทัดที่ 2: มีสตริงความยาว $N$ ซึ่งระบุข้อมูลสาย Polymer เริ่มต้นก่อนการทดลอง
+\item อีก $M$ บรรทัดถัดมา บรรทัดที่ $i+2$ จะมีค่า $p_i$ ซึ่งเป็น Parameter ของคำสั่งการจัดเรียง Polymer คำสั่งที่ $i$ ที่ต้องกระทำดับ Polymer $K$ ตามลำดับ
+\begin{lstlisting}
+N M
+K[0...N-1]
+p_1
+p_2 <%\SuppressNumber\AlternateNumber{...}%>
+    <%\AlternateNumber{M+2}%>
+p_M <%\ReactivateNumber%>
+\end{lstlisting}
+\end{itemize}
+
+\medskip\noindent
+{\sectionfont\bfseries Output Format}\begin{itemize}
+\item คำตอบประกอบตัวสตริง 1 ตัว ซึ่งก็คือสาย Polymer สุดท้ายหลังจากจัดเรียง Polymer ตามคำสั่งทั้งหมด $M$ ตามที่กำหนดให้ใน input
+\end{itemize}
+
+\subsection*{\sectionfont\upshape Data Example}
+\begin{tabular}{p{0.45\linewidth}p{0.45\linewidth}}
+\toprule
+Example Input & Example Output \\
+\midrule
+\ttfamily\setstretch{0.8}
+9 3 \newline
+ASDFGHJKL \newline
+3 \newline
+6 \newline
+0 &
+\ttfamily\setstretch{0.8} KHGJDSAFL \\
+\bottomrule
+\end{tabular}
+
+\subsection*{\sectionfont\upshape Constraints}
+
+โปรแกรมของคุณจะถูกทดสอบกับ test cases สองชุด (เรียกว่าชุดเล็ก และชุดใหญ่)
+\begin{itemize}
+\item test cases ชุดเล็กจะมีเงื่อนไขว่า ความยาว polymer จะสอดคล้องกับเงื่อนไข \\
+    $1 \leq N \leq 300$ 
+    และจำนวนครั้งที่เรียกใช้งานเครื่องจัดเรียง polymer 
+    สอดคล้องกับเงื่อนไข $0 \leq M \leq 30,\!000$
+\item test cases ชุดใหญ่จะมีเงื่อนไขว่า ความยาว polymer จะสอดคล้องกับเงื่อนไข \\
+    $1 \leq N \leq 300,\!000$ 
+    และจำนวนครั้งที่เรียกใช้งานเครื่องจัดเรียง polymer 
+    สอดคล้องกับเงื่อนไข $0 \leq M \leq 300,\!000$
+\end{itemize}

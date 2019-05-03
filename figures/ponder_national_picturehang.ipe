@@ -1,0 +1,859 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipe SYSTEM "ipe.dtd">
+<ipe version="70206" creator="Ipe 7.2.7">
+<info created="D:20190416163851" modified="D:20190420022744"/>
+<ipestyle name="basic">
+<symbol name="arrow/arc(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/farc(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/ptarc(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/fptarc(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="mark/circle(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+</symbol>
+<symbol name="mark/disk(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+</path>
+</symbol>
+<symbol name="mark/fdisk(sfx)" transformations="translations">
+<group>
+<path fill="sym-fill">
+0.5 0 0 0.5 0 0 e
+</path>
+<path fill="sym-stroke" fillrule="eofill">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+</group>
+</symbol>
+<symbol name="mark/box(sx)" transformations="translations">
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</symbol>
+<symbol name="mark/square(sx)" transformations="translations">
+<path fill="sym-stroke">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+</path>
+</symbol>
+<symbol name="mark/fsquare(sfx)" transformations="translations">
+<group>
+<path fill="sym-fill">
+-0.5 -0.5 m
+0.5 -0.5 l
+0.5 0.5 l
+-0.5 0.5 l
+h
+</path>
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="mark/cross(sx)" transformations="translations">
+<group>
+<path fill="sym-stroke">
+-0.43 -0.57 m
+0.57 0.43 l
+0.43 0.57 l
+-0.57 -0.43 l
+h
+</path>
+<path fill="sym-stroke">
+-0.43 0.57 m
+0.57 -0.43 l
+0.43 -0.57 l
+-0.57 0.43 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="arrow/fnormal(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/pointed(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/fpointed(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/linear(spx)">
+<path stroke="sym-stroke" pen="sym-pen">
+-1 0.333 m
+0 0 l
+-1 -0.333 l
+</path>
+</symbol>
+<symbol name="arrow/fdouble(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/double(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<pen name="heavier" value="0.8"/>
+<pen name="fat" value="1.2"/>
+<pen name="ultrafat" value="2"/>
+<symbolsize name="large" value="5"/>
+<symbolsize name="small" value="2"/>
+<symbolsize name="tiny" value="1.1"/>
+<arrowsize name="large" value="10"/>
+<arrowsize name="small" value="5"/>
+<arrowsize name="tiny" value="3"/>
+<color name="red" value="1 0 0"/>
+<color name="green" value="0 1 0"/>
+<color name="blue" value="0 0 1"/>
+<color name="yellow" value="1 1 0"/>
+<color name="orange" value="1 0.647 0"/>
+<color name="gold" value="1 0.843 0"/>
+<color name="purple" value="0.627 0.125 0.941"/>
+<color name="gray" value="0.745"/>
+<color name="brown" value="0.647 0.165 0.165"/>
+<color name="navy" value="0 0 0.502"/>
+<color name="pink" value="1 0.753 0.796"/>
+<color name="seagreen" value="0.18 0.545 0.341"/>
+<color name="turquoise" value="0.251 0.878 0.816"/>
+<color name="violet" value="0.933 0.51 0.933"/>
+<color name="darkblue" value="0 0 0.545"/>
+<color name="darkcyan" value="0 0.545 0.545"/>
+<color name="darkgray" value="0.663"/>
+<color name="darkgreen" value="0 0.392 0"/>
+<color name="darkmagenta" value="0.545 0 0.545"/>
+<color name="darkorange" value="1 0.549 0"/>
+<color name="darkred" value="0.545 0 0"/>
+<color name="lightblue" value="0.678 0.847 0.902"/>
+<color name="lightcyan" value="0.878 1 1"/>
+<color name="lightgray" value="0.827"/>
+<color name="lightgreen" value="0.565 0.933 0.565"/>
+<color name="lightyellow" value="1 1 0.878"/>
+<dashstyle name="dashed" value="[4] 0"/>
+<dashstyle name="dotted" value="[1 3] 0"/>
+<dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
+<dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
+<textsize name="large" value="\large"/>
+<textsize name="Large" value="\Large"/>
+<textsize name="LARGE" value="\LARGE"/>
+<textsize name="huge" value="\huge"/>
+<textsize name="Huge" value="\Huge"/>
+<textsize name="small" value="\small"/>
+<textsize name="footnote" value="\footnotesize"/>
+<textsize name="tiny" value="\tiny"/>
+<textstyle name="center" begin="\begin{center}" end="\end{center}"/>
+<textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
+<textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
+<gridsize name="4 pts" value="4"/>
+<gridsize name="8 pts (~3 mm)" value="8"/>
+<gridsize name="16 pts (~6 mm)" value="16"/>
+<gridsize name="32 pts (~12 mm)" value="32"/>
+<gridsize name="10 pts (~3.5 mm)" value="10"/>
+<gridsize name="20 pts (~7 mm)" value="20"/>
+<gridsize name="14 pts (~5 mm)" value="14"/>
+<gridsize name="28 pts (~10 mm)" value="28"/>
+<gridsize name="56 pts (~20 mm)" value="56"/>
+<anglesize name="90 deg" value="90"/>
+<anglesize name="60 deg" value="60"/>
+<anglesize name="45 deg" value="45"/>
+<anglesize name="30 deg" value="30"/>
+<anglesize name="22.5 deg" value="22.5"/>
+<opacity name="10%" value="0.1"/>
+<opacity name="30%" value="0.3"/>
+<opacity name="50%" value="0.5"/>
+<opacity name="75%" value="0.75"/>
+<tiling name="falling" angle="-60" step="4" width="1"/>
+<tiling name="rising" angle="30" step="4" width="1"/>
+</ipestyle>
+<ipestyle name="font-selection">
+<preamble>
+\makeatletter
+\usepackage{etoolbox}
+
+\usepackage[T1]{fontenc}
+\usepackage{noto}
+\usepackage{lato}
+\usepackage{inconsolata}
+\usepackage{fouriernc}
+
+\def\familydefault{\sfdefault}
+\def\rmdefault{NotoSerif-TOsF}
+\def\sfdefault{lato-TOsF}
+\def\ttdefault{zi4}
+\def\zifour@scaled{s*[0.925]}
+\def\zifour@narrow{}
+\def\zifour@opt{0}
+\def\zifour@altopt{2}
+\def\zifour@spc{\hyphenchar\font=\m@ne}
+
+\usepackage{mweights}
+\def\mdseries@rm{l}
+\def\bfseries@rm{eb}
+\def\mdseries@sf{l}
+\def\bfseries@sf{eb}
+
+\newrobustcmd\selectweight[1]{\fontseries{#1}\selectfont}
+
+\usepackage{setspace}
+\setstretch{1.2}
+
+% Setup math fonts and symbols
+\usepackage{fdsymbol}
+\usepackage{fontawesome}
+\usepackage[%
+    activate={true,nocompatibility},final,tracking=true,letterspace=40,%
+    kerning=true,spacing=true,factor=1150,stretch=15,shrink=15%
+]{microtype}
+\microtypecontext{spacing=nonfrench}
+
+\makeatother
+</preamble>
+</ipestyle>
+<ipestyle name="x11colors">
+<color name="AntiqueWhite1" value="1 0.936 0.86"/>
+<color name="AntiqueWhite2" value="0.932 0.875 0.8"/>
+<color name="AntiqueWhite3" value="0.804 0.752 0.69"/>
+<color name="AntiqueWhite4" value="0.545 0.512 0.47"/>
+<color name="Aquamarine1" value="0.498 1 0.83"/>
+<color name="Aquamarine2" value="0.464 0.932 0.776"/>
+<color name="Aquamarine3" value="0.4 0.804 0.668"/>
+<color name="Aquamarine4" value="0.27 0.545 0.455"/>
+<color name="Azure1" value="0.94 1 1"/>
+<color name="Azure2" value="0.88 0.932 0.932"/>
+<color name="Azure3" value="0.756 0.804 0.804"/>
+<color name="Azure4" value="0.512 0.545 0.545"/>
+<color name="Bisque1" value="1 0.894 0.77"/>
+<color name="Bisque2" value="0.932 0.835 0.716"/>
+<color name="Bisque3" value="0.804 0.716 0.62"/>
+<color name="Bisque4" value="0.545 0.49 0.42"/>
+<color name="Blue1" value="0 0 1"/>
+<color name="Blue2" value="0 0 0.932"/>
+<color name="Blue3" value="0 0 0.804"/>
+<color name="Blue4" value="0 0 0.545"/>
+<color name="Brown1" value="1 0.25 0.25"/>
+<color name="Brown2" value="0.932 0.23 0.23"/>
+<color name="Brown3" value="0.804 0.2 0.2"/>
+<color name="Brown4" value="0.545 0.136 0.136"/>
+<color name="Burlywood1" value="1 0.828 0.608"/>
+<color name="Burlywood2" value="0.932 0.772 0.57"/>
+<color name="Burlywood3" value="0.804 0.668 0.49"/>
+<color name="Burlywood4" value="0.545 0.45 0.332"/>
+<color name="CadetBlue1" value="0.596 0.96 1"/>
+<color name="CadetBlue2" value="0.556 0.898 0.932"/>
+<color name="CadetBlue3" value="0.48 0.772 0.804"/>
+<color name="CadetBlue4" value="0.325 0.525 0.545"/>
+<color name="Chartreuse1" value="0.498 1 0"/>
+<color name="Chartreuse2" value="0.464 0.932 0"/>
+<color name="Chartreuse3" value="0.4 0.804 0"/>
+<color name="Chartreuse4" value="0.27 0.545 0"/>
+<color name="Chocolate1" value="1 0.498 0.14"/>
+<color name="Chocolate2" value="0.932 0.464 0.13"/>
+<color name="Chocolate3" value="0.804 0.4 0.112"/>
+<color name="Chocolate4" value="0.545 0.27 0.075"/>
+<color name="Coral1" value="1 0.448 0.336"/>
+<color name="Coral2" value="0.932 0.415 0.312"/>
+<color name="Coral3" value="0.804 0.356 0.27"/>
+<color name="Coral4" value="0.545 0.244 0.185"/>
+<color name="Cornsilk1" value="1 0.972 0.864"/>
+<color name="Cornsilk2" value="0.932 0.91 0.804"/>
+<color name="Cornsilk3" value="0.804 0.785 0.694"/>
+<color name="Cornsilk4" value="0.545 0.532 0.47"/>
+<color name="Cyan1" value="0 1 1"/>
+<color name="Cyan2" value="0 0.932 0.932"/>
+<color name="Cyan3" value="0 0.804 0.804"/>
+<color name="Cyan4" value="0 0.545 0.545"/>
+<color name="DarkGoldenrod1" value="1 0.725 0.06"/>
+<color name="DarkGoldenrod2" value="0.932 0.68 0.055"/>
+<color name="DarkGoldenrod3" value="0.804 0.585 0.048"/>
+<color name="DarkGoldenrod4" value="0.545 0.396 0.03"/>
+<color name="DarkOliveGreen1" value="0.792 1 0.44"/>
+<color name="DarkOliveGreen2" value="0.736 0.932 0.408"/>
+<color name="DarkOliveGreen3" value="0.635 0.804 0.352"/>
+<color name="DarkOliveGreen4" value="0.43 0.545 0.24"/>
+<color name="DarkOrange1" value="1 0.498 0"/>
+<color name="DarkOrange2" value="0.932 0.464 0"/>
+<color name="DarkOrange3" value="0.804 0.4 0"/>
+<color name="DarkOrange4" value="0.545 0.27 0"/>
+<color name="DarkOrchid1" value="0.75 0.244 1"/>
+<color name="DarkOrchid2" value="0.698 0.228 0.932"/>
+<color name="DarkOrchid3" value="0.604 0.196 0.804"/>
+<color name="DarkOrchid4" value="0.408 0.132 0.545"/>
+<color name="DarkSeaGreen1" value="0.756 1 0.756"/>
+<color name="DarkSeaGreen2" value="0.705 0.932 0.705"/>
+<color name="DarkSeaGreen3" value="0.608 0.804 0.608"/>
+<color name="DarkSeaGreen4" value="0.41 0.545 0.41"/>
+<color name="DarkSlateGray1" value="0.592 1 1"/>
+<color name="DarkSlateGray2" value="0.552 0.932 0.932"/>
+<color name="DarkSlateGray3" value="0.475 0.804 0.804"/>
+<color name="DarkSlateGray4" value="0.32 0.545 0.545"/>
+<color name="DeepPink1" value="1 0.08 0.576"/>
+<color name="DeepPink2" value="0.932 0.07 0.536"/>
+<color name="DeepPink3" value="0.804 0.064 0.464"/>
+<color name="DeepPink4" value="0.545 0.04 0.312"/>
+<color name="DeepSkyBlue1" value="0 0.75 1"/>
+<color name="DeepSkyBlue2" value="0 0.698 0.932"/>
+<color name="DeepSkyBlue3" value="0 0.604 0.804"/>
+<color name="DeepSkyBlue4" value="0 0.408 0.545"/>
+<color name="DodgerBlue1" value="0.116 0.565 1"/>
+<color name="DodgerBlue2" value="0.11 0.525 0.932"/>
+<color name="DodgerBlue3" value="0.094 0.455 0.804"/>
+<color name="DodgerBlue4" value="0.064 0.305 0.545"/>
+<color name="Firebrick1" value="1 0.19 0.19"/>
+<color name="Firebrick2" value="0.932 0.172 0.172"/>
+<color name="Firebrick3" value="0.804 0.15 0.15"/>
+<color name="Firebrick4" value="0.545 0.1 0.1"/>
+<color name="Gold1" value="1 0.844 0"/>
+<color name="Gold2" value="0.932 0.79 0"/>
+<color name="Gold3" value="0.804 0.68 0"/>
+<color name="Gold4" value="0.545 0.46 0"/>
+<color name="Goldenrod1" value="1 0.756 0.145"/>
+<color name="Goldenrod2" value="0.932 0.705 0.132"/>
+<color name="Goldenrod3" value="0.804 0.608 0.112"/>
+<color name="Goldenrod4" value="0.545 0.41 0.08"/>
+<color name="Green1" value="0 1 0"/>
+<color name="Green2" value="0 0.932 0"/>
+<color name="Green3" value="0 0.804 0"/>
+<color name="Green4" value="0 0.545 0"/>
+<color name="Honeydew1" value="0.94 1 0.94"/>
+<color name="Honeydew2" value="0.88 0.932 0.88"/>
+<color name="Honeydew3" value="0.756 0.804 0.756"/>
+<color name="Honeydew4" value="0.512 0.545 0.512"/>
+<color name="HotPink1" value="1 0.43 0.705"/>
+<color name="HotPink2" value="0.932 0.415 0.655"/>
+<color name="HotPink3" value="0.804 0.376 0.565"/>
+<color name="HotPink4" value="0.545 0.228 0.385"/>
+<color name="IndianRed1" value="1 0.415 0.415"/>
+<color name="IndianRed2" value="0.932 0.39 0.39"/>
+<color name="IndianRed3" value="0.804 0.332 0.332"/>
+<color name="IndianRed4" value="0.545 0.228 0.228"/>
+<color name="Ivory1" value="1 1 0.94"/>
+<color name="Ivory2" value="0.932 0.932 0.88"/>
+<color name="Ivory3" value="0.804 0.804 0.756"/>
+<color name="Ivory4" value="0.545 0.545 0.512"/>
+<color name="Khaki1" value="1 0.965 0.56"/>
+<color name="Khaki2" value="0.932 0.9 0.52"/>
+<color name="Khaki3" value="0.804 0.776 0.45"/>
+<color name="Khaki4" value="0.545 0.525 0.305"/>
+<color name="LavenderBlush1" value="1 0.94 0.96"/>
+<color name="LavenderBlush2" value="0.932 0.88 0.898"/>
+<color name="LavenderBlush3" value="0.804 0.756 0.772"/>
+<color name="LavenderBlush4" value="0.545 0.512 0.525"/>
+<color name="LemonChiffon1" value="1 0.98 0.804"/>
+<color name="LemonChiffon2" value="0.932 0.912 0.75"/>
+<color name="LemonChiffon3" value="0.804 0.79 0.648"/>
+<color name="LemonChiffon4" value="0.545 0.536 0.44"/>
+<color name="LightBlue1" value="0.75 0.936 1"/>
+<color name="LightBlue2" value="0.698 0.875 0.932"/>
+<color name="LightBlue3" value="0.604 0.752 0.804"/>
+<color name="LightBlue4" value="0.408 0.512 0.545"/>
+<color name="LightCyan1" value="0.88 1 1"/>
+<color name="LightCyan2" value="0.82 0.932 0.932"/>
+<color name="LightCyan3" value="0.705 0.804 0.804"/>
+<color name="LightCyan4" value="0.48 0.545 0.545"/>
+<color name="LightGoldenrod1" value="1 0.925 0.545"/>
+<color name="LightGoldenrod2" value="0.932 0.864 0.51"/>
+<color name="LightGoldenrod3" value="0.804 0.745 0.44"/>
+<color name="LightGoldenrod4" value="0.545 0.505 0.298"/>
+<color name="LightPink1" value="1 0.684 0.725"/>
+<color name="LightPink2" value="0.932 0.635 0.68"/>
+<color name="LightPink3" value="0.804 0.55 0.585"/>
+<color name="LightPink4" value="0.545 0.372 0.396"/>
+<color name="LightSalmon1" value="1 0.628 0.48"/>
+<color name="LightSalmon2" value="0.932 0.585 0.448"/>
+<color name="LightSalmon3" value="0.804 0.505 0.385"/>
+<color name="LightSalmon4" value="0.545 0.34 0.26"/>
+<color name="LightSkyBlue1" value="0.69 0.888 1"/>
+<color name="LightSkyBlue2" value="0.644 0.828 0.932"/>
+<color name="LightSkyBlue3" value="0.552 0.712 0.804"/>
+<color name="LightSkyBlue4" value="0.376 0.484 0.545"/>
+<color name="LightSteelBlue1" value="0.792 0.884 1"/>
+<color name="LightSteelBlue2" value="0.736 0.824 0.932"/>
+<color name="LightSteelBlue3" value="0.635 0.71 0.804"/>
+<color name="LightSteelBlue4" value="0.43 0.484 0.545"/>
+<color name="LightYellow1" value="1 1 0.88"/>
+<color name="LightYellow2" value="0.932 0.932 0.82"/>
+<color name="LightYellow3" value="0.804 0.804 0.705"/>
+<color name="LightYellow4" value="0.545 0.545 0.48"/>
+<color name="Magenta1" value="1 0 1"/>
+<color name="Magenta2" value="0.932 0 0.932"/>
+<color name="Magenta3" value="0.804 0 0.804"/>
+<color name="Magenta4" value="0.545 0 0.545"/>
+<color name="Maroon1" value="1 0.204 0.7"/>
+<color name="Maroon2" value="0.932 0.19 0.655"/>
+<color name="Maroon3" value="0.804 0.16 0.565"/>
+<color name="Maroon4" value="0.545 0.11 0.385"/>
+<color name="MediumOrchid1" value="0.88 0.4 1"/>
+<color name="MediumOrchid2" value="0.82 0.372 0.932"/>
+<color name="MediumOrchid3" value="0.705 0.32 0.804"/>
+<color name="MediumOrchid4" value="0.48 0.215 0.545"/>
+<color name="MediumPurple1" value="0.67 0.51 1"/>
+<color name="MediumPurple2" value="0.624 0.475 0.932"/>
+<color name="MediumPurple3" value="0.536 0.408 0.804"/>
+<color name="MediumPurple4" value="0.365 0.28 0.545"/>
+<color name="MistyRose1" value="1 0.894 0.884"/>
+<color name="MistyRose2" value="0.932 0.835 0.824"/>
+<color name="MistyRose3" value="0.804 0.716 0.71"/>
+<color name="MistyRose4" value="0.545 0.49 0.484"/>
+<color name="NavajoWhite1" value="1 0.87 0.68"/>
+<color name="NavajoWhite2" value="0.932 0.81 0.63"/>
+<color name="NavajoWhite3" value="0.804 0.7 0.545"/>
+<color name="NavajoWhite4" value="0.545 0.475 0.37"/>
+<color name="OliveDrab1" value="0.752 1 0.244"/>
+<color name="OliveDrab2" value="0.7 0.932 0.228"/>
+<color name="OliveDrab3" value="0.604 0.804 0.196"/>
+<color name="OliveDrab4" value="0.41 0.545 0.132"/>
+<color name="Orange1" value="1 0.648 0"/>
+<color name="Orange2" value="0.932 0.604 0"/>
+<color name="Orange3" value="0.804 0.52 0"/>
+<color name="Orange4" value="0.545 0.352 0"/>
+<color name="OrangeRed1" value="1 0.27 0"/>
+<color name="OrangeRed2" value="0.932 0.25 0"/>
+<color name="OrangeRed3" value="0.804 0.215 0"/>
+<color name="OrangeRed4" value="0.545 0.145 0"/>
+<color name="Orchid1" value="1 0.512 0.98"/>
+<color name="Orchid2" value="0.932 0.48 0.912"/>
+<color name="Orchid3" value="0.804 0.41 0.79"/>
+<color name="Orchid4" value="0.545 0.28 0.536"/>
+<color name="PaleGreen1" value="0.604 1 0.604"/>
+<color name="PaleGreen2" value="0.565 0.932 0.565"/>
+<color name="PaleGreen3" value="0.488 0.804 0.488"/>
+<color name="PaleGreen4" value="0.33 0.545 0.33"/>
+<color name="PaleTurquoise1" value="0.732 1 1"/>
+<color name="PaleTurquoise2" value="0.684 0.932 0.932"/>
+<color name="PaleTurquoise3" value="0.59 0.804 0.804"/>
+<color name="PaleTurquoise4" value="0.4 0.545 0.545"/>
+<color name="PaleVioletRed1" value="1 0.51 0.67"/>
+<color name="PaleVioletRed2" value="0.932 0.475 0.624"/>
+<color name="PaleVioletRed3" value="0.804 0.408 0.536"/>
+<color name="PaleVioletRed4" value="0.545 0.28 0.365"/>
+<color name="PeachPuff1" value="1 0.855 0.725"/>
+<color name="PeachPuff2" value="0.932 0.796 0.68"/>
+<color name="PeachPuff3" value="0.804 0.688 0.585"/>
+<color name="PeachPuff4" value="0.545 0.468 0.396"/>
+<color name="Pink1" value="1 0.71 0.772"/>
+<color name="Pink2" value="0.932 0.664 0.72"/>
+<color name="Pink3" value="0.804 0.57 0.62"/>
+<color name="Pink4" value="0.545 0.39 0.424"/>
+<color name="Plum1" value="1 0.732 1"/>
+<color name="Plum2" value="0.932 0.684 0.932"/>
+<color name="Plum3" value="0.804 0.59 0.804"/>
+<color name="Plum4" value="0.545 0.4 0.545"/>
+<color name="Purple1" value="0.608 0.19 1"/>
+<color name="Purple2" value="0.57 0.172 0.932"/>
+<color name="Purple3" value="0.49 0.15 0.804"/>
+<color name="Purple4" value="0.332 0.1 0.545"/>
+<color name="Red1" value="1 0 0"/>
+<color name="Red2" value="0.932 0 0"/>
+<color name="Red3" value="0.804 0 0"/>
+<color name="Red4" value="0.545 0 0"/>
+<color name="RosyBrown1" value="1 0.756 0.756"/>
+<color name="RosyBrown2" value="0.932 0.705 0.705"/>
+<color name="RosyBrown3" value="0.804 0.608 0.608"/>
+<color name="RosyBrown4" value="0.545 0.41 0.41"/>
+<color name="RoyalBlue1" value="0.284 0.464 1"/>
+<color name="RoyalBlue2" value="0.264 0.43 0.932"/>
+<color name="RoyalBlue3" value="0.228 0.372 0.804"/>
+<color name="RoyalBlue4" value="0.152 0.25 0.545"/>
+<color name="Salmon1" value="1 0.55 0.41"/>
+<color name="Salmon2" value="0.932 0.51 0.385"/>
+<color name="Salmon3" value="0.804 0.44 0.33"/>
+<color name="Salmon4" value="0.545 0.298 0.224"/>
+<color name="SeaGreen1" value="0.33 1 0.624"/>
+<color name="SeaGreen2" value="0.305 0.932 0.58"/>
+<color name="SeaGreen3" value="0.264 0.804 0.5"/>
+<color name="SeaGreen4" value="0.18 0.545 0.34"/>
+<color name="Seashell1" value="1 0.96 0.932"/>
+<color name="Seashell2" value="0.932 0.898 0.87"/>
+<color name="Seashell3" value="0.804 0.772 0.75"/>
+<color name="Seashell4" value="0.545 0.525 0.51"/>
+<color name="Sienna1" value="1 0.51 0.28"/>
+<color name="Sienna2" value="0.932 0.475 0.26"/>
+<color name="Sienna3" value="0.804 0.408 0.224"/>
+<color name="Sienna4" value="0.545 0.28 0.15"/>
+<color name="SkyBlue1" value="0.53 0.808 1"/>
+<color name="SkyBlue2" value="0.494 0.752 0.932"/>
+<color name="SkyBlue3" value="0.424 0.65 0.804"/>
+<color name="SkyBlue4" value="0.29 0.44 0.545"/>
+<color name="SlateBlue1" value="0.512 0.435 1"/>
+<color name="SlateBlue2" value="0.48 0.404 0.932"/>
+<color name="SlateBlue3" value="0.41 0.35 0.804"/>
+<color name="SlateBlue4" value="0.28 0.235 0.545"/>
+<color name="SlateGray1" value="0.776 0.888 1"/>
+<color name="SlateGray2" value="0.725 0.828 0.932"/>
+<color name="SlateGray3" value="0.624 0.712 0.804"/>
+<color name="SlateGray4" value="0.424 0.484 0.545"/>
+<color name="Snow1" value="1 0.98 0.98"/>
+<color name="Snow2" value="0.932 0.912 0.912"/>
+<color name="Snow3" value="0.804 0.79 0.79"/>
+<color name="Snow4" value="0.545 0.536 0.536"/>
+<color name="SpringGreen1" value="0 1 0.498"/>
+<color name="SpringGreen2" value="0 0.932 0.464"/>
+<color name="SpringGreen3" value="0 0.804 0.4"/>
+<color name="SpringGreen4" value="0 0.545 0.27"/>
+<color name="SteelBlue1" value="0.39 0.72 1"/>
+<color name="SteelBlue2" value="0.36 0.675 0.932"/>
+<color name="SteelBlue3" value="0.31 0.58 0.804"/>
+<color name="SteelBlue4" value="0.21 0.392 0.545"/>
+<color name="Tan1" value="1 0.648 0.31"/>
+<color name="Tan2" value="0.932 0.604 0.288"/>
+<color name="Tan3" value="0.804 0.52 0.248"/>
+<color name="Tan4" value="0.545 0.352 0.17"/>
+<color name="Thistle1" value="1 0.884 1"/>
+<color name="Thistle2" value="0.932 0.824 0.932"/>
+<color name="Thistle3" value="0.804 0.71 0.804"/>
+<color name="Thistle4" value="0.545 0.484 0.545"/>
+<color name="Tomato1" value="1 0.39 0.28"/>
+<color name="Tomato2" value="0.932 0.36 0.26"/>
+<color name="Tomato3" value="0.804 0.31 0.224"/>
+<color name="Tomato4" value="0.545 0.21 0.15"/>
+<color name="Turquoise1" value="0 0.96 1"/>
+<color name="Turquoise2" value="0 0.898 0.932"/>
+<color name="Turquoise3" value="0 0.772 0.804"/>
+<color name="Turquoise4" value="0 0.525 0.545"/>
+<color name="VioletRed1" value="1 0.244 0.59"/>
+<color name="VioletRed2" value="0.932 0.228 0.55"/>
+<color name="VioletRed3" value="0.804 0.196 0.47"/>
+<color name="VioletRed4" value="0.545 0.132 0.32"/>
+<color name="Wheat1" value="1 0.905 0.73"/>
+<color name="Wheat2" value="0.932 0.848 0.684"/>
+<color name="Wheat3" value="0.804 0.73 0.59"/>
+<color name="Wheat4" value="0.545 0.494 0.4"/>
+<color name="Yellow1" value="1 1 0"/>
+<color name="Yellow2" value="0.932 0.932 0"/>
+<color name="Yellow3" value="0.804 0.804 0"/>
+<color name="Yellow4" value="0.545 0.545 0"/>
+<color name="Gray0" value="0.745"/>
+<color name="Green0" value="0 1 0"/>
+<color name="Grey0" value="0.745"/>
+<color name="Maroon0" value="0.69 0.19 0.376"/>
+<color name="Purple0" value="0.628 0.125 0.94"/>
+</ipestyle>
+<ipestyle name="kbtg-colors">
+<color name="KBTG Green" value="0.105 0.654 0.341"/>
+<color name="KBTG Red" value="0.921 0.117 0.207"/>
+<color name="KBTG Secondary Blue" value="0.105 0.38 0.654"/>
+<color name="KBTG Secondary Orange" value="0.921 0.6 0.117"/>
+<color name="KBTG Main Gray" value="0.305 0.305 0.301"/>
+<color name="KBTG Mid Gray" value="0.78"/>
+<color name="KBTG Light Gray" value="0.98"/>
+<color name="KBTG Lighter Green" value="0.596 0.964 0.756"/>
+<color name="KBTG Lighter Red" value="0.96 0.678 0.705"/>
+<color name="KBTG Lighter Blue" value="0.596 0.78 0.964"/>
+<color name="KBTG Lighter Orange" value="0.96 0.843 0.678"/>
+</ipestyle>
+<page>
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<path layer="alpha" stroke="black" pen="fat" cap="1">
+160 480 m
+128 512
+160 544
+176 576
+240 576
+256 544
+288 512
+256 480 c
+</path>
+<path layer="beta" stroke="black">
+96 480 m
+320 480 l
+</path>
+<path layer="alpha" matrix="0.6 0 0 0.571429 92.8 100.571" fill="KBTG Lighter Blue">
+112 688
+112 720
+144 720
+240 720
+272 720
+272 688
+272 528
+272 496
+240 496
+144 496
+112 496
+112 528 u
+</path>
+<path matrix="0.6 0 0 0.857143 92.8 -100.571" fill="white">
+64 0 0 64 192 640 e
+</path>
+<path fill="KBTG Main Gray">
+4 0 0 4 184 552 e
+</path>
+<path fill="KBTG Main Gray">
+4 0 0 4 232 552 e
+</path>
+<use layer="beta" name="mark/disk(sx)" pos="128 512" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="160 544" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="176 576" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="240 576" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="256 544" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="288 512" size="normal" stroke="black"/>
+</page>
+<page>
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<path layer="alpha" stroke="black" pen="fat" cap="1">
+160 480 m
+128 512
+176 592
+192 592
+208 544
+240 528
+256 544
+256 560
+240 576
+224 576
+192 576
+176 576
+160 560
+160 544
+176 528
+208 544
+224 592
+240 592
+288 512
+256 480 c
+</path>
+<path layer="beta" stroke="black">
+96 480 m
+320 480 l
+</path>
+<path layer="alpha" matrix="0.6 0 0 0.571429 92.8 100.571" fill="KBTG Lighter Green">
+112 688
+112 720
+144 720
+240 720
+272 720
+272 688
+272 528
+272 496
+240 496
+144 496
+112 496
+112 528 u
+</path>
+<path matrix="0.6 0 0 0.857143 92.8 -100.571" fill="white">
+64 0 0 64 192 640 e
+</path>
+<path fill="KBTG Main Gray">
+4 0 0 4 184 552 e
+</path>
+<path fill="KBTG Main Gray">
+4 0 0 4 232 552 e
+</path>
+<use layer="beta" name="mark/disk(sx)" pos="128 512" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="160 544" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 16" name="mark/disk(sx)" pos="176 576" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 16" name="mark/disk(sx)" pos="240 576" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="256 544" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="288 512" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="208 544" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 16" name="mark/disk(sx)" pos="192 576" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 16" name="mark/disk(sx)" pos="224 576" size="normal" stroke="black"/>
+</page>
+<page>
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<path layer="alpha" matrix="0.8 0 0 1.14286 41.6 -68.5714" stroke="black" pen="fat" cap="1">
+160 480 m
+128 512
+128 576
+176 592
+256 576
+176 560
+144 544
+176 528
+240 528
+272 544
+240 560
+160 576
+240 592
+288 576
+288 512
+256 480 c
+</path>
+<path layer="beta" stroke="black">
+96 480 m
+320 480 l
+</path>
+<path layer="alpha" matrix="0.6 0 0 0.571429 92.8 100.571" fill="KBTG Lighter Red">
+112 688
+112 720
+144 720
+240 720
+272 720
+272 688
+272 528
+272 496
+240 496
+144 496
+112 496
+112 528 u
+</path>
+<path matrix="0.6 0 0 0.857143 92.8 -100.571" fill="white">
+64 0 0 64 192 640 e
+</path>
+<path fill="KBTG Main Gray">
+4 0 0 4 184 552 e
+</path>
+<path fill="KBTG Main Gray">
+4 0 0 4 232 552 e
+</path>
+<use layer="beta" name="mark/disk(sx)" pos="128 512" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 16" name="mark/disk(sx)" pos="176 576" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 16" name="mark/disk(sx)" pos="240 576" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="288 512" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="176 560" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="176 528" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="240 528" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="240 560" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="160 576" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="256 576" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="128 576" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="288 576" size="normal" stroke="black"/>
+</page>
+<page>
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<path layer="alpha" stroke="black" pen="fat" cap="1">
+160 480 m
+128 512
+160 544
+176 576 c
+</path>
+<path stroke="black" pen="fat" cap="1">
+256 480 m
+288 512
+256 544
+240 576 c
+</path>
+<path layer="beta" stroke="black">
+96 480 m
+320 480 l
+</path>
+<path layer="alpha" matrix="0.6 0 0 0.571429 92.8 100.571" fill="KBTG Lighter Orange">
+112 688
+112 720
+144 720
+240 720
+272 720
+272 688
+272 528
+272 496
+240 496
+144 496
+112 496
+112 528 u
+</path>
+<path matrix="0.6 0 0 0.857143 92.8 -100.571" fill="white">
+64 0 0 64 192 640 e
+</path>
+<path fill="KBTG Main Gray">
+4 0 0 4 184 552 e
+</path>
+<path fill="KBTG Main Gray">
+4 0 0 4 232 552 e
+</path>
+<use layer="beta" name="mark/disk(sx)" pos="128 512" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="160 544" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="176 576" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="240 576" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="256 544" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="288 512" size="normal" stroke="black"/>
+<path layer="alpha" matrix="1 0 0 1 24 0" fill="KBTG Main Gray">
+4 0 0 4 184 552 e
+</path>
+<text transformations="translations" pos="184 536" stroke="black" type="label" width="6.294" height="6.548" depth="0" halign="center" valign="baseline" size="small">\bfseries A</text>
+<text matrix="1 0 0 1 24 0" transformations="translations" pos="184 536" stroke="black" type="label" width="5.949" height="6.548" depth="0" halign="center" valign="baseline" size="small">\bfseries B</text>
+<text matrix="1 0 0 1 48 0" transformations="translations" pos="184 536" stroke="black" type="label" width="5.909" height="6.557" depth="0.06" halign="center" valign="baseline" size="small">\bfseries C</text>
+</page>
+</ipe>

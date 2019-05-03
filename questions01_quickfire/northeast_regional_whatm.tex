@@ -1,0 +1,19 @@
+\question{\label{q:quickfire-northeast-regional-whatm}}
+
+จงพิจารณาโปรแกรมดังต่อไปนี้
+\begin{lstlisting}
+function mystery_<%\ref*{q:quickfire-northeast-regional-whatm}%>(A[0...n-1]):
+    # A <%\codecmt คือ%> 0-indexed array <%\codecmt ของจำนวนเต็ม%>
+    n = A.length()
+    result = 0
+    for i := 0 to n-1 do:
+        if A[i] < result then:
+            result := A[i]
+        end
+    return result
+end
+\end{lstlisting}
+
+จงหาผลลัพธ์ของการรันโปรแกรม \lstinline{mystery_}%
+\texttt{\small\ref*{q:quickfire-northeast-regional-whatm}}%
+\lstinline{([9, 43, 214, 1, 5])}

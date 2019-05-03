@@ -1,0 +1,144 @@
+\question{\bfseries Island Counting}
+
+\subsection*{\sectionfont\upshape Background}
+
+ในเกมย้อนยุคเกมหนึ่ง มีการวาดแผนที่ด้วย ASCII Art โดยประกอบไปด้วยอักขระ ASCII 
+ที่เรียงตัวกันเป็นสี่เหลี่ยมผืนผ้าจำนวน $R$ แถว แถวละ $C$ ตัว
+
+อักขระแต่ละตัวจะแทนช่อง 1 ช่องและมีค่าได้ 2 แบบ ได้แก่
+\begin{itemize}
+    \item ผืนดิน ซึ่งเราจะขอแทนด้วย `\verb|#|'
+    \item ผืนน้ำ ซึ่งเราจะขอแทนด้วย `\verb|.|'
+\end{itemize}
+
+นอกจากนี้เราจะสมมติว่า รอบนอกสี่เหลี่ยมผืนผ้านี้จะ\uline{มีแต่น้ำทะเล}อันกว้างใหญ่ไพศาลและ\uline{ไม่มีผืนดิน}อยู่เลย
+
+\bigskip\noindent
+\textbf{\uline{ตัวอย่าง}}* นี่คือแผนที่ตัวอย่าง ซึ่งมีขนาด $R = {6}$ และ $C = {18}$
+\begin{center}
+    \vspace{0.25\baselineskip}
+    \begin{centervrb}{18}
+\begin{plainvrb}
+................##
+..#####...##......
+.##...##..##...###
+.#..#..#.......#..
+.#....##..#.#..#.#
+.######....#...#.#
+\end{plainvrb}
+    \end{centervrb}
+    \vspace{0.25\baselineskip}
+\end{center}
+
+\subsection*{\sectionfont\upshape What is an island?}
+จากแผนที่ในลักษณะข้างต้น เรานิยามภูมิประเทศทีของเกาะดังนี้%
+
+\begin{itemize}
+\item หากเราเริ่มต้นจากตำแหน่งผืนดินใด ๆ ในแผนที่ แล้วสามารถเดินทางไปยังผืนดินอื่น~ๆ 
+    ข้างเคียงได้ด้วยการเดิน ขึ้น--ลง--ซ้าย--ขวา ไปเรื่อย~ๆ ได้ 
+    ให้ถือว่าผืนดินที่เดินไปถึงทั้งหมดเหล่านั้นเป็นส่วนหนึ่งของเกาะเดียวกัน
+\item มากไปกว่านั้น จากการเดินข้างต้น หากเราเริ่มเดินจนวกกลับมาที่ผืนดินเริ่มต้น 
+    ให้ถือว่าบริเวณที่ถูกรายล้อมด้วยการเดินข้างต้นเป็นส่วนหนึ่งของเกาะเดียวกันเช่นกัน
+    \begin{itemize}[before*=\small]
+    \item สังเกตว่าอาจมีทะเลสาบที่ถูกรายล้อมด้วยผืนดินของเกาะเกาะหนึ่ง 
+        ซึ่งผืนน้ำดังกล่าวจะถูกนับไปส่วนหนึ่งของเกาะนั้นด้วย
+    \item ไม่เพียงแค่นั้น ผืนดินที่ซ้อนอยู่ภายในทะเลสาบดังกล่าว 
+        ก็ยังถือว่าเป็นส่วนของเกาะภายนอกด้วย ไม่นับเป็นเกาะแยกต่างหาก
+    \end{itemize}
+\end{itemize}
+
+\bigskip\noindent
+\textbf{\uline{ตัวอย่าง}}* จากแผนที่ตัวอย่างเดิมข้างต้น 
+เราสามารถเขียนใหม่โดยส่วนของเกาะเดียวกันเขียนด้วยตัวอักษรเดียวกันได้ดังนี้
+(สังเกตได้ว่าแผนที่นี้จะมีเกาะทั้งสิ้น 8 เกาะ)
+\begin{center}
+    \vspace{0.25\baselineskip}
+    \begin{centervrb}{18}
+\begin{plainvrb}
+................AA
+..BBBBB...CC......
+.BBBBBBB..CC...DDD
+.BBBBBBB.......D..
+.BBBBBBB..E.F..D.G
+.BBBBBB....H...D.G
+\end{plainvrb}
+    \end{centervrb}
+    \vspace{0.25\baselineskip}
+\end{center}    
+
+\subsection*{\sectionfont\upshape Problem Statement}
+
+จากแผนที่ภายในเกมที่กำหนดให้ มีเกาะทั้งสิ้นกี่เกาะ?
+
+\subsection*{\sectionfont\upshape Program Specification}
+
+โปรแกรมที่คุณเขียนจะต้องอ่านข้อมูลจาก stardard input 
+และเขียนคำตอบลง standard output โดยข้อมูลจะมีฟอร์แมตดังต่อไปนี้
+
+\bigskip\noindent
+{\sectionfont\bfseries Input Format}
+\begin{itemize}[itemsep=0pt]
+\item บรรทัดที่ 1: มีจำนวนเต็มสองตัว $R, C$ คั่นด้วยช่องว่าง
+\item อีก $R$ บรรทัดถัดมา บรรทัดที่ $i+1$ จะมีสตริงความยาว $C$ 
+    ที่ประกอบไปด้วย `\verb|.|' หรือ `\verb|#|' (ซึ่งบอกข้อมูลแถวนั้น ๆ ของแผนที่)
+\begin{lstlisting}
+R C
+M[1,1...C]
+M[2,1...C] <%\SuppressNumber\AlternateNumber{...}%>
+           <%\AlternateNumber{R+1}%>
+M[R,1...C] <%\ReactivateNumber%>
+\end{lstlisting}
+\textbf{หมายเหตุ:} ตัวแปร \verb|M| ข้างต้น คือแผนที่ซึ่งเขียนในรูปของ 1-indexed array สองมิติ
+\end{itemize}
+
+\medskip\noindent
+{\sectionfont\bfseries Output Format}
+\begin{itemize}
+\item คำตอบประกอบด้วยจำนวนเต็มตัวเดียว ซึ่งระบุจำนวนเกาะในแผนที่ที่กำหนดให้
+\end{itemize}
+
+\newpage
+\subsection*{\sectionfont\upshape Data Examples}
+\begin{tabular}{p{0.45\linewidth}p{0.45\linewidth}}
+\toprule
+Example Input & Example Output \\
+\midrule
+\begin{centervrb}{18}
+\begin{plainvrb}
+6 18
+................##
+..#####...##......
+.##...##..##...###
+.#..#..#.......#..
+.#....##..#.#..#.#
+.######....#...#.#
+
+\end{plainvrb} 
+\end{centervrb} &
+\verb|8| \\
+\midrule
+\begin{centervrb}{7}
+\setstretch{0.8}
+\begin{plainvrb}
+7 7
+.......
+..####.
+.#...#.
+.#.#.#.
+.#...#.
+.#####.
+.......
+
+\end{plainvrb} 
+\end{centervrb} &
+\verb|2| \\
+\bottomrule
+\end{tabular}
+
+\subsection*{\sectionfont\upshape Constraints}
+
+โปรแกรมของคุณจะถูกทดสอบกับ test cases สองชุด (เรียกว่าชุดเล็ก และชุดใหญ่)
+\begin{itemize}
+\item test cases ชุดเล็กจะมีเงื่อนไขว่า ${1} \leq R, C \leq {200}$
+\item test cases ชุดใหญ่จะมีเงื่อนไขว่า ${1} \leq R, C \leq {3000}$
+\end{itemize}

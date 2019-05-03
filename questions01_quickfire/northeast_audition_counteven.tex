@@ -1,0 +1,26 @@
+\question{}
+
+จงพิจารณาโปรแกรมดังต่อไปนี้ที่เขียนขึ้นเพื่อนับว่า 
+มีจำนวนคู่กี่จำนวนในบรรดาจำนวนตั้งแต่จำนวนเต็ม \lstinline{m} จนถึงจำนวนเต็ม \lstinline{n} (สมมติว่า \verb|m ≤ n|)\;
+โปรแกรมนี้จะให้ผลลัพธ์ที่\uline{ถูกต้อง}ภายใต้เงื่อนไขใดของ input \uline{บ้าง}?
+\begin{lstlisting}
+function count_even(m, n):
+    # m, n <%\codecmt คือจำนวนเต็มซึ่ง%> m <= n
+    count := 0
+    i := m
+    while i <= n do:
+        count := count + 1
+        i := i + 2
+    end
+    return count
+end
+\end{lstlisting}
+
+\begin{multicols}{2}
+\begin{itemize}[label={$\square$}]
+    \item กรณีที่ \verb|m| และ \verb|n| เป็นจำนวนคู่
+    \item กรณีที่ \verb|m| เป็นจำนวนคี่ \verb|n| เป็นจำนวนคู่
+    \item กรณีที่ \verb|m| เป็นจำนวนคู่ \verb|n| เป็นจำนวนคี่
+    \item กรณีที่ \verb|m| และ \verb|n| เป็นจำนวนคี่
+\end{itemize}
+\end{multicols}

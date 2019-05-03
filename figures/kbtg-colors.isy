@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipestyle SYSTEM "ipe.dtd">
+<ipestyle name="kbtg-colors">
+  <!-- https://coolors.co/1ba757-eb1e35-4e4e4d-c7c7c7-fafafa -->
+  <color name="KBTG Green" value="0.10588235294117647 0.6549019607843137 0.3411764705882353"/>
+  <color name="KBTG Red" value="0.9215686274509803 0.11764705882352941 0.20784313725490197"/>
+  <color name="KBTG Secondary Blue" value="0.10588235294117647 0.3803921568627451 0.6549019607843137"/> <!-- 1B61A7 -->
+  <color name="KBTG Secondary Orange" value="0.9215686274509803 0.6 0.11764705882352941"/> <!--	EB991E -->
+  <color name="KBTG Main Gray" value="0.3058823529411765, 0.3058823529411765, 0.30196078431372547"/>
+  <color name="KBTG Mid Gray" value="0.7803921568627451"/>
+  <color name="KBTG Light Gray" value="0.9803921568627451"/>
+  <color name="KBTG Lighter Green" value="0.59607843137254901960 0.96470588235294117647 0.75686274509803921568"/> <!-- 98F6C1 -->
+  <color name="KBTG Lighter Red" value="0.96078431372549019607 0.67843137254901960784 0.70588235294117647058"/> <!-- F5ADB4 -->
+  <color name="KBTG Lighter Blue" value="0.59607843137254901960 0.78039215686274509803 0.96470588235294117647"/> <!-- 98C7F6 -->
+  <color name="KBTG Lighter Orange" value="0.96078431372549019607 0.84313725490196078431 0.67843137254901960784"/> <!-- F5D7AD -->
+</ipestyle>

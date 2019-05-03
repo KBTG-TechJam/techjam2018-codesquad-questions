@@ -1,0 +1,24 @@
+\question{\label{q:quickfire-central-audition-linearswap}}
+
+จงพิจารณาโปรแกรมดังต่อไปนี้
+\begin{lstlisting}
+function mystery_<%\ref*{q:quickfire-central-audition-linearswap}%>(A[0...n-1]):
+    # A <%\codecmt คือ%> 0-indexed array <%\codecmt ของจำนวนเต็ม%>
+    n := A.length()
+    for i := 0 to n-2 do:
+        if A[i] > A[i+1] then:
+            swap A[i] with A[i+1]
+        end
+    end
+    return A
+end
+\end{lstlisting}
+
+\medskip\noindent
+จากโปรแกรมข้างต้นนี้ ประพจน์ใดกล่าวถูกต้อง\uline{บ้าง}?
+
+\begin{enumerate}[label={$\square$}]
+    \item \textbf{ประพจน์ P:} มีค่าค่าหนึ่งใน output array ซึ่งเมื่อลบออกจาก array ดังกล่าว จะทำให้ array ผลลัพธ์เป็น array ที่เรียงลำดับ
+    \item \textbf{ประพจน์ Q:} สำหรับ input array A ใด ๆ ที่มีขนาด N จะได้ว่า \lstinline{f(A)[N-1] = max(A)}
+    \item \textbf{ประพจน์ R:} สำหรับ input array A ใด ๆ ที่มีขนาด N จะได้ว่า \lstinline{f(A)[0] = min(A)}
+\end{enumerate}

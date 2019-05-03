@@ -1,0 +1,82 @@
+\question{\bfseries Shipping Dools}
+
+\subsection*{\sectionfont\upshape Problem Statement}
+
+โรงงานแห่งหนึ่งรับจ้างผลิตตุ๊กตาแบบสั่งทำพิเศษ\;
+อยู่มาวันหนึ่งมีลูกค้า A มาติดต่อจ้างให้ผลิตตุ๊กตาทั้งสิ้น $N$ ตัว\; 
+ตุ๊กตาแต่ละตัวมีหมายเลขกำกับ $i = {1, 2}, \ldots, N$\;
+นอกจากนั้น ตุ๊กตาตัวที่ $i$ จะมีน้ำหนัก $w_i$ กรัม ซึ่งอาจเท่ากันหรือต่างกันก็ได้
+
+เมื่อโรงงานแห่งนี้ผลิตตุ๊กตาเสร็จเป็นที่เรียบร้อยแล้ว โรงงานจะต้องขนส่งตุ๊กตาทั้งหมดนี้ให้ลูกค้า A\;\;
+โรงงานสามารถเลือกขนส่งตุ๊กตา\uline{แต่ละตัว}ได้ 2 วิธี คือ 
+(1) บรรจุตุ๊กตาลงในกล่องพัสดุที่จำกัดน้ำหนัก หรือ 
+(2) บรรจุตุ๊กตาลงถุงกระสอบที่จำกัดจำนวนตุ๊กตา โดยมีเงื่อนไขว่า
+\begin{itemize}
+\item การขนส่งอาจใช้กล่องหลายใบก็ได้ กล่องแต่ละใบจุของน้ำหนักรวมไม่เกิน $L$ กรัม
+\item การขนส่งสามารถใช้ถุงกระสอบได้เพียงถุงเดียว และใส่ตุ๊กตาได้ไม่เกิน $M$ ตัว (ไม่จำกัดน้ำหนัก)
+\item หากตุ๊กตาหมายเลขที่ $s$ และตุ๊กตาหมายเลขที่ $t$ จะถูกบรรจุลงในกล่องใบเดียวกันแล้ว 
+    ตุ๊กตาหมายเลขที่ $i$ แต่ละตัวซึ่งมีหมายเลขอยู่ระหว่าง $s$ กับ $t$ 
+    จะต้องถูกบรรจุ\uline{ในกล่องใบ} \uline{เดียวกันด้วย} หรือจะต้องถูกบรรจุ\uline{ในถุงกระสอบ}เท่านั้น
+\end{itemize}
+
+\subsection*{\sectionfont\upshape Main Goal}
+
+โรงงานต้องการขนส่งตุ๊กตาทั้งหมดให้ลูกค้า $A$ โดยใช้จำนวนกล่องให้น้อยที่สุด จะต้องใช้กล่องทั้งหมดกี่ใบ?
+
+\subsection*{\sectionfont\upshape Program Specification}
+
+โปรแกรมที่คุณเขียนจะต้องอ่านข้อมูลจาก stardard input 
+และเขียนคำตอบลง standard output โดยข้อมูลจะมีฟอร์แมตดังต่อไปนี้
+
+\bigskip\noindent
+{\sectionfont\bfseries Input Format}
+\begin{itemize}
+\item บรรทัดที่ 1: มีจำนวนเต็มสามตัว $N, L, M$ คั่นด้วยช่องว่าง
+\item อีก $N$ บรรทัดถัดมา บรรทัดที่ $i+1$ จะมีจำนวนเต็ม $w_i$ ระบุน้ำหนักของตุ๊กตาตัวที่ $i$
+\begin{lstlisting}
+N L M
+w_1
+w_2 <%\SuppressNumber\AlternateNumber{...}%>
+    <%\AlternateNumber{N+1}%>
+w_N <%\ReactivateNumber%>
+\end{lstlisting}
+\end{itemize}
+
+\medskip\noindent
+{\sectionfont\bfseries Output Format}
+\begin{itemize}
+\item คำตอบประกอบด้วยจำนวนเต็มตัวเดียว ซึ่งระบุจำนวนกล่องที่น้อยที่สุด%
+    ที่สามารถใช้ขนส่งตุ๊กตาทั้งหมดตามเงื่อนไขโจทย์ข้างต้น
+\end{itemize}
+
+\newpage
+\subsection*{\sectionfont\upshape Data Example}
+\begin{tabular}{p{0.45\linewidth}p{0.45\linewidth}}
+\toprule
+Example Input & Example Output \\
+\midrule
+\ttfamily\setstretch{0.8}
+6 5 1 \newline
+1 \newline
+2 \newline
+3 \newline
+2 \newline
+1 \newline
+4 &
+\ttfamily\setstretch{0.8} 2 \\
+\bottomrule
+\end{tabular}
+
+\medskip\noindent
+\textbf{อธิบายตัวอย่าง:} หยิบตุ๊กตาตัวที่ $i={3}$ ซึ่ง $w_i = {3}$ ใส่ถุง 
+จากนั้นหยิบตุ๊กตาตัวที่ ${1, 2, 4}$ ใส่กล่องใบแรก และตัวที่ ${5, 6}$ ใส่กล่องใบที่สอง
+
+\subsection*{\sectionfont\upshape Constraints}
+
+โปรแกรมของคุณจะถูกทดสอบกับ test cases สองชุด (เรียกว่าชุดเล็ก และชุดใหญ่)
+\begin{itemize}
+\item test cases ชุดเล็กจะมีเงื่อนไขว่า ${1} \leq N \leq {250}$
+\item test cases ชุดใหญ่จะมีเงื่อนไขว่า ${1} \leq N \leq {2500}$
+\item นอกจากนั้นกำหนดให้ ${1} \leq L \leq {10^8};\; {0} \leq M \leq N$ 
+    และตุ๊กตาแต่ละตัวมีนำหนัก ${1} \leq w_i \leq L$
+\end{itemize}

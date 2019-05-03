@@ -1,0 +1,18 @@
+\question{\label{q:quickfire_south_regional_reverseshuffle}}
+
+จงพิจารณาโปรแกรมดังต่อไปนี้
+\begin{lstlisting}
+function mystery_<%\ref*{q:quickfire_south_regional_reverseshuffle}%>(A[0...n-1])
+    # A <%\codecmt คือ%> 0-indexed array  
+    n := A.length()
+    for i := 0 to n-1
+        for j := n downto i + 1
+            swap values between A[i] and A[j]
+        end
+    end
+    return A
+end
+\end{lstlisting}
+
+จงหา array \lstinline{A} ที่เมื่อป้อนเป็น input ให้แก่โปรแกรมข้างต้นแล้ว
+จะได้ output ออกมาเป็น array ที่มีค่า \lstinline{[1, 2, 3, 4]}

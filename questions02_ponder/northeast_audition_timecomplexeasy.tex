@@ -1,0 +1,17 @@
+\question{}
+
+จงพิจารณาโปรแกรมดังต่อไปนี้
+\begin{lstlisting}
+function f(n):
+    if n ≤ 1 then:
+        return 1
+    else:
+        x = f(n/2)
+        y = f(n/2)
+        return g(n, x, y)
+    end
+end
+\end{lstlisting}
+
+หากกำหนดให้ time complexity ของฟังก์ชัน \lstinline{g(n, ·, ·)} คือ $O(\mathtt{n})$ 
+แล้วจงคำนวณหา time complexity ของฟังก์ชัน \lstinline{f(n)}

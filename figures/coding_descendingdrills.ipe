@@ -1,0 +1,1213 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipe SYSTEM "ipe.dtd">
+<ipe version="70206" creator="Ipe 7.2.7">
+<info created="D:20180930230927" modified="D:20190422003427"/>
+<ipestyle name="basic">
+<symbol name="arrow/arc(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/farc(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/ptarc(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/fptarc(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="mark/circle(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+</symbol>
+<symbol name="mark/disk(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+</path>
+</symbol>
+<symbol name="mark/fdisk(sfx)" transformations="translations">
+<group>
+<path fill="sym-fill">
+0.5 0 0 0.5 0 0 e
+</path>
+<path fill="sym-stroke" fillrule="eofill">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+</group>
+</symbol>
+<symbol name="mark/box(sx)" transformations="translations">
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</symbol>
+<symbol name="mark/square(sx)" transformations="translations">
+<path fill="sym-stroke">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+</path>
+</symbol>
+<symbol name="mark/fsquare(sfx)" transformations="translations">
+<group>
+<path fill="sym-fill">
+-0.5 -0.5 m
+0.5 -0.5 l
+0.5 0.5 l
+-0.5 0.5 l
+h
+</path>
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="mark/cross(sx)" transformations="translations">
+<group>
+<path fill="sym-stroke">
+-0.43 -0.57 m
+0.57 0.43 l
+0.43 0.57 l
+-0.57 -0.43 l
+h
+</path>
+<path fill="sym-stroke">
+-0.43 0.57 m
+0.57 -0.43 l
+0.43 -0.57 l
+-0.57 0.43 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="arrow/fnormal(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/pointed(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/fpointed(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/linear(spx)">
+<path stroke="sym-stroke" pen="sym-pen">
+-1 0.333 m
+0 0 l
+-1 -0.333 l
+</path>
+</symbol>
+<symbol name="arrow/fdouble(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/double(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<pen name="heavier" value="0.8"/>
+<pen name="fat" value="1.2"/>
+<pen name="ultrafat" value="2"/>
+<symbolsize name="large" value="5"/>
+<symbolsize name="small" value="2"/>
+<symbolsize name="tiny" value="1.1"/>
+<arrowsize name="large" value="10"/>
+<arrowsize name="small" value="5"/>
+<arrowsize name="tiny" value="3"/>
+<color name="red" value="1 0 0"/>
+<color name="green" value="0 1 0"/>
+<color name="blue" value="0 0 1"/>
+<color name="yellow" value="1 1 0"/>
+<color name="orange" value="1 0.647 0"/>
+<color name="gold" value="1 0.843 0"/>
+<color name="purple" value="0.627 0.125 0.941"/>
+<color name="gray" value="0.745"/>
+<color name="brown" value="0.647 0.165 0.165"/>
+<color name="navy" value="0 0 0.502"/>
+<color name="pink" value="1 0.753 0.796"/>
+<color name="seagreen" value="0.18 0.545 0.341"/>
+<color name="turquoise" value="0.251 0.878 0.816"/>
+<color name="violet" value="0.933 0.51 0.933"/>
+<color name="darkblue" value="0 0 0.545"/>
+<color name="darkcyan" value="0 0.545 0.545"/>
+<color name="darkgray" value="0.663"/>
+<color name="darkgreen" value="0 0.392 0"/>
+<color name="darkmagenta" value="0.545 0 0.545"/>
+<color name="darkorange" value="1 0.549 0"/>
+<color name="darkred" value="0.545 0 0"/>
+<color name="lightblue" value="0.678 0.847 0.902"/>
+<color name="lightcyan" value="0.878 1 1"/>
+<color name="lightgray" value="0.827"/>
+<color name="lightgreen" value="0.565 0.933 0.565"/>
+<color name="lightyellow" value="1 1 0.878"/>
+<dashstyle name="dashed" value="[4] 0"/>
+<dashstyle name="dotted" value="[1 3] 0"/>
+<dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
+<dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
+<textsize name="large" value="\large"/>
+<textsize name="Large" value="\Large"/>
+<textsize name="LARGE" value="\LARGE"/>
+<textsize name="huge" value="\huge"/>
+<textsize name="Huge" value="\Huge"/>
+<textsize name="small" value="\small"/>
+<textsize name="footnote" value="\footnotesize"/>
+<textsize name="tiny" value="\tiny"/>
+<textstyle name="center" begin="\begin{center}" end="\end{center}"/>
+<textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
+<textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
+<gridsize name="4 pts" value="4"/>
+<gridsize name="8 pts (~3 mm)" value="8"/>
+<gridsize name="16 pts (~6 mm)" value="16"/>
+<gridsize name="32 pts (~12 mm)" value="32"/>
+<gridsize name="10 pts (~3.5 mm)" value="10"/>
+<gridsize name="20 pts (~7 mm)" value="20"/>
+<gridsize name="14 pts (~5 mm)" value="14"/>
+<gridsize name="28 pts (~10 mm)" value="28"/>
+<gridsize name="56 pts (~20 mm)" value="56"/>
+<anglesize name="90 deg" value="90"/>
+<anglesize name="60 deg" value="60"/>
+<anglesize name="45 deg" value="45"/>
+<anglesize name="30 deg" value="30"/>
+<anglesize name="22.5 deg" value="22.5"/>
+<opacity name="10%" value="0.1"/>
+<opacity name="30%" value="0.3"/>
+<opacity name="50%" value="0.5"/>
+<opacity name="75%" value="0.75"/>
+<tiling name="falling" angle="-60" step="4" width="1"/>
+<tiling name="rising" angle="30" step="4" width="1"/>
+</ipestyle>
+<ipestyle name="utilities">
+<pen name="normal" value="1.2"/>
+<pen name="heavier" value="2.4"/>
+<pen name="fat" value="3.6"/>
+<pen name="ultrafat" value="6"/>
+<symbolsize name="normal" value="9"/>
+<symbolsize name="large" value="15"/>
+<symbolsize name="small" value="6"/>
+<symbolsize name="tiny" value="3.3"/>
+<arrowsize name="normal" value="15"/>
+<arrowsize name="large" value="20"/>
+<arrowsize name="small" value="10"/>
+<arrowsize name="tiny" value="6"/>
+<color name="title" value="0.105 0.654 0.341"/>
+<color name="bars" value="0.98"/>
+<dashstyle name="dashed" value="[4] 0"/>
+<dashstyle name="dotted" value="[1 3] 0"/>
+<dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
+<dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
+<textsize name="normal" value="\normalsize"/>
+<textsize name="large" value="\large"/>
+<textsize name="Large" value="\Large"/>
+<textsize name="LARGE" value="\LARGE"/>
+<textsize name="huge" value="\huge"/>
+<textsize name="Huge" value="\Huge"/>
+<textsize name="small" value="\small"/>
+<textsize name="footnote" value="\footnotesize"/>
+<textsize name="tiny" value="\tiny"/>
+<textsize name="script" value="\scriptsize"/>
+<textstretch name="normal" value="3.2"/>
+<textstretch name="large" value="3.25"/>
+<textstretch name="Large" value="3.3"/>
+<textstretch name="LARGE" value="3.35"/>
+<textstretch name="huge" value="3.4"/>
+<textstretch name="Huge" value="3.45"/>
+<textstretch name="small" value="3"/>
+<textstretch name="footnote" value="2.8"/>
+<textstretch name="tiny" value="2.4"/>
+<textstretch name="script" value="2.4"/>
+<gridsize name="4 pts" value="4"/>
+<gridsize name="2 pts" value="2"/>
+<gridsize name="8 pts" value="8"/>
+<gridsize name="12 pts" value="12"/>
+<gridsize name="16 pts" value="16"/>
+<gridsize name="18 pts" value="18"/>
+<gridsize name="24 pts" value="24"/>
+<gridsize name="32 pts" value="32"/>
+<gridsize name="36 pts" value="36"/>
+<gridsize name="72 pts" value="72"/>
+<anglesize name="90 deg" value="90"/>
+<anglesize name="60 deg" value="60"/>
+<anglesize name="45 deg" value="45"/>
+<anglesize name="30 deg" value="30"/>
+<anglesize name="22.5 deg" value="22.5"/>
+<opacity name="10%" value="0.1"/>
+<opacity name="50%" value="0.5"/>
+<opacity name="75%" value="0.75"/>
+<opacity name="25%" value="0.25"/>
+<opacity name="90%" value="0.9"/>
+<opacity name="95%" value="0.95"/>
+<tiling name="falling" angle="-60" step="12" width="3"/>
+<tiling name="rising" angle="30" step="12" width="3"/>
+</ipestyle>
+<ipestyle name="font-selection">
+<preamble>
+\makeatletter
+\usepackage{etoolbox}
+
+\usepackage[T1]{fontenc}
+\usepackage{noto}
+\usepackage{lato}
+\usepackage{inconsolata}
+\usepackage{fouriernc}
+
+\def\familydefault{\sfdefault}
+\def\rmdefault{NotoSerif-TOsF}
+\def\sfdefault{lato-TOsF}
+\def\ttdefault{zi4}
+\def\zifour@scaled{s*[0.925]}
+\def\zifour@narrow{}
+\def\zifour@opt{0}
+\def\zifour@altopt{2}
+\def\zifour@spc{\hyphenchar\font=\m@ne}
+
+\usepackage{mweights}
+\def\mdseries@rm{l}
+\def\bfseries@rm{eb}
+\def\mdseries@sf{l}
+\def\bfseries@sf{eb}
+
+\newrobustcmd\selectweight[1]{\fontseries{#1}\selectfont}
+
+\usepackage{setspace}
+\setstretch{1.2}
+
+% Setup math fonts and symbols
+\usepackage{fdsymbol}
+\usepackage{fontawesome}
+\usepackage[%
+    activate={true,nocompatibility},final,tracking=true,letterspace=40,%
+    kerning=true,spacing=true,factor=1150,stretch=15,shrink=15%
+]{microtype}
+\microtypecontext{spacing=nonfrench}
+
+\makeatother
+</preamble>
+</ipestyle>
+<ipestyle name="kbtg-colors">
+<color name="KBTG Green" value="0.105 0.654 0.341"/>
+<color name="KBTG Red" value="0.921 0.117 0.207"/>
+<color name="KBTG Secondary Blue" value="0.105 0.38 0.654"/>
+<color name="KBTG Secondary Orange" value="0.921 0.6 0.117"/>
+<color name="KBTG Main Gray" value="0.305 0.305 0.301"/>
+<color name="KBTG Mid Gray" value="0.78"/>
+<color name="KBTG Light Gray" value="0.98"/>
+<color name="KBTG Lighter Green" value="0.596 0.964 0.756"/>
+<color name="KBTG Lighter Red" value="0.96 0.678 0.705"/>
+<color name="KBTG Lighter Blue" value="0.596 0.78 0.964"/>
+<color name="KBTG Lighter Orange" value="0.96 0.843 0.678"/>
+</ipestyle>
+<page>
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha beta" active="alpha"/>
+<view layers="alpha gamma" active="alpha"/>
+<path layer="alpha" matrix="0.500867 0 0 0.500867 47.9167 383.334" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 383.334" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 383.334" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 383.334" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 383.334" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 383.334" stroke="black" fill="KBTG Light Gray" cap="1">
+416 768 m
+416 704 l
+480 704 l
+480 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 351.278" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 351.278" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 351.278" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 351.278" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 351.278" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 351.278" stroke="black" fill="KBTG Light Gray" cap="1">
+416 768 m
+416 704 l
+480 704 l
+480 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 319.223" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 319.223" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 319.223" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 319.223" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 319.223" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 319.223" stroke="black" fill="KBTG Light Gray" cap="1">
+416 768 m
+416 704 l
+480 704 l
+480 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 287.167" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 287.167" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 287.167" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 287.167" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 287.167" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 287.167" stroke="black" fill="KBTG Light Gray" cap="1">
+416 768 m
+416 704 l
+480 704 l
+480 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 255.112" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 255.112" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 255.112" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 255.112" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 255.112" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 255.112" stroke="black" fill="KBTG Light Gray" cap="1">
+416 768 m
+416 704 l
+480 704 l
+480 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 223.056" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 223.056" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 223.056" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 223.056" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 223.056" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 223.056" stroke="black" fill="KBTG Light Gray" cap="1">
+416 768 m
+416 704 l
+480 704 l
+480 768 l
+h
+</path>
+<text matrix="0.500867 0 0 0.500867 47.9167 383.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">7</text>
+<text matrix="0.500867 0 0 0.500867 15.8612 383.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">3</text>
+<text matrix="0.500867 0 0 0.500867 -16.1943 383.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">2</text>
+<text matrix="0.500867 0 0 0.500867 -48.2498 383.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">1</text>
+<text matrix="0.500867 0 0 0.500867 -80.3053 383.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 383.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">3</text>
+<text matrix="0.500867 0 0 0.500867 47.9167 351.278" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">-5</text>
+<text matrix="0.500867 0 0 0.500867 15.8612 351.278" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">4</text>
+<text matrix="0.500867 0 0 0.500867 -16.1943 351.278" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">4</text>
+<text matrix="0.500867 0 0 0.500867 -48.2498 351.278" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">7</text>
+<text matrix="0.500867 0 0 0.500867 -80.3053 351.278" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-2</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 351.278" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">4</text>
+<text matrix="0.500867 0 0 0.500867 47.9167 319.223" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">6</text>
+<text matrix="0.500867 0 0 0.500867 15.8612 319.223" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-2</text>
+<text matrix="0.500867 0 0 0.500867 -16.1943 319.223" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">-9</text>
+<text matrix="0.500867 0 0 0.500867 -48.2498 319.223" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">1</text>
+<text matrix="0.500867 0 0 0.500867 -80.3053 319.223" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">-5</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 319.223" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">6</text>
+<text matrix="0.500867 0 0 0.500867 47.9167 287.167" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">-8</text>
+<text matrix="0.500867 0 0 0.500867 15.8612 287.167" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">6</text>
+<text matrix="0.500867 0 0 0.500867 -16.1943 287.167" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">8</text>
+<text matrix="0.500867 0 0 0.500867 -48.2498 287.167" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">-9</text>
+<text matrix="0.500867 0 0 0.500867 -80.3053 287.167" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">7</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 287.167" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">8</text>
+<text matrix="0.500867 0 0 0.500867 47.9167 255.112" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">1</text>
+<text matrix="0.500867 0 0 0.500867 15.8612 255.112" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-4</text>
+<text matrix="0.500867 0 0 0.500867 -16.1943 255.112" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">6</text>
+<text matrix="0.500867 0 0 0.500867 -48.2498 255.112" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">2</text>
+<text matrix="0.500867 0 0 0.500867 -80.3053 255.112" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">9</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 255.112" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">1</text>
+<text matrix="0.500867 0 0 0.500867 47.9167 223.056" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">-3</text>
+<text matrix="0.500867 0 0 0.500867 15.8612 223.056" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">-5</text>
+<text matrix="0.500867 0 0 0.500867 -16.1943 223.056" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">4</text>
+<text matrix="0.500867 0 0 0.500867 -48.2498 223.056" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">-9</text>
+<text matrix="0.500867 0 0 0.500867 -80.3053 223.056" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">2</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 223.056" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">4</text>
+<path layer="beta" matrix="1 0 0 1 0 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 0 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 0 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 0 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path matrix="1 0 0 1 24 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 24 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 24 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 24 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path matrix="1 0 0 1 108 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 108 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 108 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 108 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path matrix="1 0 0 1 132 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 132 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 132 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 132 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path matrix="1 0 0 1 216 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 216 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 216 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 216 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path matrix="1 0 0 1 240 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 240 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 240 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 240 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path layer="alpha" matrix="1.0625 0 0 1 -12 0" stroke="black" pen="fat" cap="1">
+64 768 m
+320 768 l
+</path>
+<path layer="beta" stroke="KBTG Green" pen="fat" cap="1">
+124 772 m
+128 784 l
+132 772 l
+136 788 l
+140 772 l
+144 784 l
+148 772 l
+</path>
+<path matrix="1 0 0 1 112 0" stroke="KBTG Green" pen="fat" cap="1">
+124 772 m
+128 784 l
+132 772 l
+136 788 l
+140 772 l
+144 784 l
+148 772 l
+</path>
+<path layer="alpha" stroke="white">
+96 556 m
+288 556 l
+</path>
+<path matrix="1 0 0 1 0 268" stroke="white">
+96 556 m
+288 556 l
+</path>
+<path layer="gamma" stroke="KBTG Secondary Orange" pen="ultrafat" cap="1" arrow="normal/tiny" opacity="50%">
+272 784 m
+272 752 l
+240 752 l
+240 720 l
+176 720 l
+176 688 l
+112 688 l
+112 656 l
+144 656 l
+144 624 l
+208 624 l
+208 592 l
+</path>
+</page>
+<page>
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha beta" active="alpha"/>
+<view layers="alpha gamma" active="gamma"/>
+<path layer="alpha" matrix="0.500867 0 0 0.500867 47.9167 383.334" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 383.334" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 383.334" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 383.334" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 383.334" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 351.278" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 351.278" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 351.278" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 351.278" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 351.278" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 319.223" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 319.223" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 319.223" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 319.223" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 319.223" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 287.167" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 287.167" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 287.167" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 287.167" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 287.167" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 255.112" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 255.112" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 255.112" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 255.112" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 255.112" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 223.056" stroke="black" fill="KBTG Light Gray" cap="1">
+96 768 m
+96 704 l
+160 704 l
+160 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 223.056" stroke="black" fill="KBTG Light Gray" cap="1">
+160 768 m
+160 704 l
+224 704 l
+224 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 223.056" stroke="black" fill="KBTG Light Gray" cap="1">
+224 768 m
+224 704 l
+288 704 l
+288 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 223.056" stroke="black" fill="KBTG Light Gray" cap="1">
+288 768 m
+288 704 l
+352 704 l
+352 768 l
+h
+</path>
+<path matrix="0.500867 0 0 0.500867 47.9167 223.056" stroke="black" fill="KBTG Light Gray" cap="1">
+352 768 m
+352 704 l
+416 704 l
+416 768 l
+h
+</path>
+<text matrix="0.500867 0 0 0.500867 -80.3053 383.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 383.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<path layer="beta" matrix="1 0 0 1 0 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 0 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 0 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 0 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path matrix="1 0 0 1 24 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 24 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 24 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 24 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path matrix="1 0 0 1 92 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 92 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 92 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 92 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path matrix="1 0 0 1 116 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 116 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 116 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 116 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path matrix="1 0 0 1 184 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 184 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 184 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 184 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path matrix="1 0 0 1 208 4" stroke="KBTG Red" pen="fat" cap="1">
+64 768 m
+72 780 l
+80 768 l
+</path>
+<path matrix="1 0 0 1 208 4" stroke="KBTG Red" pen="fat" cap="1">
+72 780 m
+72 800 l
+72 800 l
+</path>
+<path matrix="1 0 0 1 208 4" stroke="KBTG Red" pen="fat" cap="1">
+8 0 0 8 72 808 e
+</path>
+<path matrix="1 0 0 1 208 4" stroke="KBTG Red" pen="fat" cap="1">
+64 788 m
+72 792 l
+80 788 l
+</path>
+<path layer="alpha" matrix="0.9375 0 0 1 -4 0" stroke="black" pen="fat" cap="1">
+64 768 m
+320 768 l
+</path>
+<path layer="beta" stroke="KBTG Green" pen="fat" cap="1">
+124 772 m
+128 784 l
+132 772 l
+136 788 l
+140 772 l
+144 784 l
+148 772 l
+</path>
+<path matrix="1 0 0 1 80 0" stroke="KBTG Green" pen="fat" cap="1">
+124 772 m
+128 784 l
+132 772 l
+136 788 l
+140 772 l
+144 784 l
+148 772 l
+</path>
+<path layer="alpha" stroke="white">
+96 556 m
+288 556 l
+</path>
+<path matrix="1 0 0 1 0 268" stroke="white">
+96 556 m
+288 556 l
+</path>
+<text matrix="0.500867 0 0 0.500867 -48.361 383.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -16.361 383.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 15.639 383.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 351.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -16.361 351.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 15.639 351.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -80.3053 351.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">1</text>
+<text matrix="0.500867 0 0 0.500867 -48.3053 351.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">1</text>
+<text matrix="0.500867 0 0 0.500867 -80.3053 319.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 319.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -48.361 319.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -16.361 319.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 15.639 319.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 255.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-2</text>
+<text matrix="0.500867 0 0 0.500867 -80.361 255.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-2</text>
+<text matrix="0.500867 0 0 0.500867 -48.361 255.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-2</text>
+<text matrix="0.500867 0 0 0.500867 -16.361 255.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-2</text>
+<text matrix="0.500867 0 0 0.500867 15.639 255.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-2</text>
+<text matrix="0.500867 0 0 0.500867 -48.3053 287.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">1</text>
+<text matrix="0.500867 0 0 0.500867 -16.3053 287.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">1</text>
+<text matrix="0.500867 0 0 0.500867 -80.3053 287.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 287.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 15.639 287.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -112.361 223.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -48.361 223.334" transformations="translations" pos="448 736" stroke="black" type="label" width="27.608" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">-1</text>
+<text matrix="0.500867 0 0 0.500867 -80.3053 223.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">1</text>
+<text matrix="0.500867 0 0 0.500867 -16.3053 223.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2268" depth="0" halign="center" valign="center" size="footnote" style="math">1</text>
+<text matrix="0.500867 0 0 0.500867 15.6947 223.334" transformations="translations" pos="448 736" stroke="black" type="label" width="11.5388" height="14.2408" depth="0.224" halign="center" valign="center" size="footnote" style="math">0</text>
+<path layer="gamma" stroke="KBTG Secondary Orange" pen="ultrafat" cap="1" arrow="normal/tiny" opacity="50%">
+144 784 m
+144 720 l
+176 720 l
+176 656 l
+208 656 l
+</path>
+</page>
+</ipe>
