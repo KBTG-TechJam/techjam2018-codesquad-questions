@@ -1,3 +1,7 @@
+#####################
+# TEX related files #
+#####################
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -240,3 +244,11 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+
+##########################
+# Project-specific files #
+##########################
+
+.vscode/
+.idea/
+*.pdf

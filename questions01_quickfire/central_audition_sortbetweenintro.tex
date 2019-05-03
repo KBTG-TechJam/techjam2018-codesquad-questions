@@ -1,0 +1,42 @@
+\question{\label{q:quickfire_central_audition_sortbetweenintro}}
+
+กำหนดให้มีฟังก์ชันหนึ่ง \lstinline{sort_between(L, p, q)}    ซึ่งมีสเปกดังนี้ 
+\begin{itemize}
+    \item ข้อมูล input \lstinline{L} เป็น 0-indexed array ของจำนวนชุดหนึ่ง
+    \item ข้อมูล input \lstinline{p} และ \lstinline{q} เป็น index 
+        ภายใน array \lstinline{L} โดยที่มีเงื่อนไขว่า \\
+        \lstinline{0 <= p <= q < L.length()}
+    \item ข้อมูล output ของ \lstinline{sort_between(L, p, q)} 
+        จะเป็น array ใหม่ ซึ่งเกิดจากการจัดเรียงจำนวนบางจำนวนใน array \lstinline{L} เดิม 
+        ตั้งแต่ตำแหน่ง \lstinline{p} ถึงตำแหน่ง \lstinline{q} จากน้อยไปมาก
+        และจำนวนในตำแหน่งอื่น ๆ นอกเหนือจากนี้ยังคงเดิม
+\end{itemize}
+
+\noindent
+\textbf{\uline{ยกตัวอย่าง}}\; ถ้ากำหนดให้ \lstinline{L_0 = [4, 2, 7, 3, 8, 1, 5]}
+แล้วเมื่อเรียกฟังก์ชัน \lstinline{sort_between(L_0, 2, 4)}  
+จะได้ output เป็น \lstinline{[4, 2, 1, 3, 7, 8, 5]}
+
+\medskip\noindent
+\textbf{\uline{โจทย์}}\; สมมติว่าเรามี array \lstinline{L_1} 
+ซึ่งประกอบไปด้วยจำนวนทั้งสิ้น 250 จำนวน โปรแกรมในข้อใดต่อไปนี้\hrsp\uline{ไม่รับประกัน}\hrsp%
+ว่าสามารถเรียงลำดับจำนวนทุกจำนวนภายใน array ได้ทั้งหมด?
+\begin{enumerate}[label={$\Circle$}]
+\item \lstinline{sort_between(L_1, 0, 249)}
+\item
+    \lstinline{sort_between(L_1, 0, 199)} \\
+    \lstinline{sort_between(L_1, 150, 249)} \\
+    \lstinline{sort_between(L_1, 0, 199)}
+\item 
+    \lstinline{sort_between(L_1, 0, 199)} \\
+    \lstinline{sort_between(L_1, 50, 249)} \\
+    \lstinline{sort_between(L_1, 0, 149)}
+\item 
+    \lstinline{sort_between(L_1, 100, 249)} \\
+    \lstinline{sort_between(L_1, 0, 149)} \\
+    \lstinline{sort_between(L_1, 50, 249)}
+\item 
+    \lstinline{sort_between(L_1, 150, 249)} \\
+    \lstinline{sort_between(L_1, 0, 199)} \\
+    \lstinline{sort_between(L_1, 150, 249)}
+\end{enumerate}

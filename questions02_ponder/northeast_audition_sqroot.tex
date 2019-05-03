@@ -1,0 +1,32 @@
+\question{\label{q:ponder_northeast_audition_sqroot}}
+
+จงพิจารณาโปรแกรมดังต่อไปนี้\,\sidenote[][6.15\baselineskip]{%
+   \textbf{หมายเหตุ}\; \lstinline{floor} 
+   คือฟังก์ชันที่ปัดเศษของจำนวนเต็มทิ้งให้กลายเป็นจำนวนเต็มที่มากที่สุดที่น้อยกว่าหรือเท่ากับจำนวนเดิม
+}
+\begin{lstlisting}
+function mystery_<%\ref*{q:ponder_northeast_audition_sqroot}%>(n):
+   # n <%\codecmt เป็นจำนวนเต็มที่ไม่ติดลบ%>
+   lb := 0
+   ub := n
+   loop:
+      attempt := floor((lb + ub) / 2)
+      if n < attempt^2:
+         ub := attempt - 1
+      elseif n >= (attempt + 1)^2:
+         lb := attempt + 1
+      else: 
+         break loop and return attempt
+      end
+   end
+end
+\end{lstlisting}
+โปรแกรมข้างต้นทำหน้าที่ตามที่ระบุในข้อใดต่อไปนี้?
+
+\begin{itemize}[label={$\Circle$}]
+\item ฟังก์ชัน square root แต่ปัดเศษเป็นจำนวนเต็มที่ใกล้ที่สุดเสมอ\\ (round to nearest integer)
+\item ฟังก์ชัน square root แต่ปัดเศษทิ้งเป็นจำนวนเต็มเสมอ (round down)
+\item ฟังก์ชัน square root แต่ปัดเศษขึ้นเป็นจำนวนเต็มเสมอ (round up)
+\item ฟังก์ชัน square root แต่เศษอาจถูกปัดขึ้นหรือลงอย่างไรก็ได้ ไม่สามารถคาดเดาได้
+\item ฟังก์ชันติด infinite loop ไม่รู้จบ
+\end{itemize}

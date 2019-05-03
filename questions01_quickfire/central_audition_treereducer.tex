@@ -1,0 +1,76 @@
+\question{}
+
+เรานิยาม \textbf{Proper binary tree} คือต้นไม้ทวิภาคที่ทุกโหนดมีโหนดลูกเป็นจำนวน 0 หรือ 2 โหนดพอดีเท่านั้น\;
+(กล่าวคือทุกโหนดที่เป็น Internal/Non-leaf Node จะต้องมีโหนดลูก 2 โหนดพอดี)
+
+สมมติว่าเรามี Programming Library ตัวหนึ่งที่สามารถจัดการข้อมูลที่มีโครงสร้างเป็น Proper binary tree 
+ซึ่งมีรายละเอียดดังต่อไปนี้
+
+\begin{description}
+    \item[Data type.] โหนดแต่ละโหนดของ Proper binary tree จะมี data type ที่มีชื่อว่า 
+        \lstinline{Node} ซึ่งแบ่ง subtype ได้ 2 แบบย่อย ดังนี้
+        \begin{itemize}
+            \item \lstinline|Leaf{value: Integer}| \\
+                เป็น Leaf node ซึ่งประกอบด้วยข้อมูล 1 อย่าง ซึ่งก็คือจำนวนเต็มภายในโหนด
+            \item \lstinline|Internal{left: Node, right: Node, value: Integer}| \\
+                เป็น Non-leaf node ซึ่งประกอบด้วยข้อมูลทั้งสิ้น 3 อย่าง ได้แก่
+                1.~Subtree ทางซ้าย 2.~Subtree ทางขวา 
+                และ 3.~ข้อมูลจำนวนเต็มภายในโหนด ตามลำดับ
+        \end{itemize}
+    \item[Library function.] กำหนดให้ฟังก์ชัน \lstinline{compute} 
+        รับข้อมูลต้นไม้ประเภท \lstinline{Node} และฟังก์ชันอื่น ๆ อีก 2 ฟังก์ชัน (ดูโค้ดด้านล่างประกอบ) 
+        เพื่อประมวลผลข้อมูลต้นไม้ดังกล่าว ซึ่งสามารถเขียนเป็น pseudocode ได้ดังต่อไปนี้
+\end{description}
+
+\newpage
+\vspace*{-2\baselineskip}
+\begin{fullwidth}%
+\begin{lstlisting}[language=pseudocode]
+function compute(tree: Node,
+                 leaf_transformer: function,        # signature: Integer -> T
+                 internal_transformer: function):   # signature: T, T, Integer -> T
+    if tree matches Leaf{value} then:
+        return leaf_transformer(value)
+    else if tree matches Internal{left, right, value} then:
+        return internal_transformer(
+            compute(left, leaf_transformer, internal_transformer), 
+            compute(right, leaf_transformer, internal_transformer), 
+            value
+        )
+    end
+end
+\end{lstlisting}
+\end{fullwidth}
+
+\noindent%
+\textbf{\uline{โจทย์}}\; สมมติว่าเรามีข้อมูล Proper binary tree ที่เก็บอยู่ในตัวแปรชื่อ \lstinline{data}
+แล้วโปรแกรมในข้อใดต่อไปนี้จะนับจำนวนโหนดทั้งหมดภายในต้นไม้ (ทั้ง Leaf และ Non-leaf) 
+ภายในตัวแปร \lstinline{data} ดังกล่าวได้ถูกต้อง?\hrsp%
+\sidenote[][-2\baselineskip]{%
+    \textbf{หมายเหตุ}\; ยกตัวอย่าง syntax ของฟังก์ชันนิรนาม เช่น \lstinline{lambda(x, y) -> (x + y)/2} 
+    คือฟังก์ชันที่หาค่าเฉลี่ยของตัวเลข input argument สองตัว
+}
+
+\begin{fullwidth}
+\bigskip
+\begin{enumerate}[label={$\Circle$}]
+    \item \lstinline{compute(data, lambda(v) → v, lambda(l, r, v) → l + r)}
+    \item \lstinline{compute(data, lambda(v) → v, lambda(l, r, v) → l + r) * 2}
+    \item \lstinline{compute(data, lambda(v) → v, lambda(l, r, v) → l + r) * 2 + 1}
+    \item \lstinline{compute(data, lambda(v) → v, lambda(l, r, v) → l + r) * 2 - 1}
+    \item \lstinline{compute(data, lambda(v) → v, lambda(l, r, v) → l + r + v)}
+    \item \lstinline{compute(data, lambda(v) → v, lambda(l, r, v) → l + r + v) * 2}
+    \item \lstinline{compute(data, lambda(v) → v, lambda(l, r, v) → l + r + v) * 2 + 1}
+    \item \lstinline{compute(data, lambda(v) → v, lambda(l, r, v) → l + r + v) * 2 - 1}
+    \item \lstinline{compute(data, lambda(v) → 1, lambda(l, r, v) → l + r) * 2}
+    \item \lstinline{compute(data, lambda(v) → 1, lambda(l, r, v) → l + r) * 2 + 1}
+    \item \lstinline{compute(data, lambda(v) → 1, lambda(l, r, v) → l + r) * 2 - 1}
+    \item \lstinline{compute(data, lambda(v) → 1, lambda(l, r, v) → l + r + 1) * 2}
+    \item \lstinline{compute(data, lambda(v) → 1, lambda(l, r, v) → l + r - 1) * 2}
+    \item \lstinline{compute(data, lambda(v) → 0, lambda(l, r, v) → l + r) * 2}
+    \item \lstinline{compute(data, lambda(v) → 0, lambda(l, r, v) → l + r) * 2 + 1}
+    \item \lstinline{compute(data, lambda(v) → 0, lambda(l, r, v) → l + r) * 2 - 1}
+    \item \lstinline{compute(data, lambda(v) → 0, lambda(l, r, v) → l + r + 1) * 2}
+    \item \lstinline{compute(data, lambda(v) → 0, lambda(l, r, v) → l + r - 1) * 2}
+\end{enumerate}
+\end{fullwidth}

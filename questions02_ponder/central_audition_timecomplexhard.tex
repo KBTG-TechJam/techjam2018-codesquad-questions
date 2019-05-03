@@ -1,0 +1,33 @@
+\question{}
+
+จงพิจารณาโปรแกรมดังต่อไปนี้
+\begin{lstlisting}
+function foo(A):
+    n := A.length()
+    bar(A, 0, n-1)
+end
+
+function bar(A, lo, hi):
+    if hi - lo ≤ 31 then:
+        return spin(A, lo, hi)
+    end
+    mid := select an integer strictly between <%\SuppressNumber%>
+           lo and hi uniformly at random <%\ReactivateNumber%>
+    return bar(A, lo, mid) + bar(A, mid, hi)
+end
+
+function spin(A, lo, hi):
+    count := 0
+    for i := lo to hi-1 do:
+        for j := i + 1 to hi do:
+            if A[i] > A[j] then count := count + 1
+        end
+    end
+    return count
+end
+\end{lstlisting}
+
+หากกำหนดให้ฟังก์ชัน \lstinline{foo(A)} ในโปรแกรมข้างต้นมี input argument 
+คือ array \lstinline{A} ของจำนวนเต็มที่มีความยาว \lstinline{n} ตัวแล้ว
+จงวิเคราะห์เพื่อคํานวณหา Worst-case time complexity และ Average-case time complexity 
+ของฟังก์ชัน \lstinline{foo} ในรูปของ \lstinline{n}

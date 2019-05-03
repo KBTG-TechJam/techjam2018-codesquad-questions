@@ -1,0 +1,35 @@
+\question{\label{q:quickfire-northeast-audition-ec868bd3}}
+
+จงพิจารณาโปรแกรมดังต่อไปนี้
+\begin{lstlisting}
+function mystery_<%\ref*{q:quickfire-northeast-audition-ec868bd3}%>(I):
+   # I <%\codecmt คือ%> input character stream
+   S := empty stack
+   for each character c in stream I do:
+      if c == '(' then:
+         S.push('(')
+      elseif c == ')' and S != empty then:
+         S.pop()
+      else:
+         return "unbalanced"
+   return "balanced"
+end
+\end{lstlisting}
+
+\medskip\noindent
+ค่า input ในข้อใดต่อไปนี้\uline{บ้าง}ที่ทำให้โปรแกรมข้างต้นให้ output เป็น \lstinline{"balanced"}?
+
+\begin{fullwidth}
+\begin{multicols}{4}
+\begin{itemize}[label={$\square$}]
+   \item \lstinline{I = "()()()())"}
+   \item \lstinline{I = "((()))"}
+   \item \lstinline{I = ")()("}
+   \item \lstinline{I = "())(()"}
+   \item \lstinline{I = "()(()())"}
+   \item \lstinline{I = "(())(())("}
+   \item \lstinline{I = "(()))()"}
+   \item[]
+\end{itemize}
+\end{multicols}
+\end{fullwidth}

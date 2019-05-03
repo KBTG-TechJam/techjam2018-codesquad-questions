@@ -1,0 +1,27 @@
+\question{}
+
+กำหนดให้ \lstinline{validate_array(A)} คือฟังก์ชันที่รับ input argument
+เป็น 0-indexed array \lstinline{A} ของจำนวนเต็ม\;
+และให้ output result เป็นค่า boolean ที่เป็น \lstinline{true} หรือ \lstinline{false} เท่านั้น\;
+ฟังก์ชันดังกล่าว สามารถเขียนเป็น pseudocode ได้ดังนี้
+\begin{fullwidth}
+\vspace*{-\baselineskip}    
+\begin{lstlisting}
+function validate_array(A[0...n-1]):
+    return (0 ≤ A[i] ≤ n-1 and A[i] == A[A[i]] for each i := 0 to n-1)  <%\SuppressNumber%>
+           and (A[i-1] ≤ A[i] for each i := 1 to n-1)  <%\ReactivateNumber%>
+end
+\end{lstlisting}
+\end{fullwidth}
+
+\smallskip\noindent
+ตัวอย่างของการเรียกใช้ฟังก์ชันข้างต้น
+\begin{itemize}[itemsep=0pt]
+\item \lstinline|validate_array(A = [0, 1, 1, 3])  # => true|
+\item \lstinline|validate_array(A = [2, 2, 2, 2])  # => true|
+\item \lstinline|validate_array(A = [1, 2, 3, 3])  # => false|
+\item \lstinline|validate_array(A = [3, 1, 1, 3])  # => false|
+\end{itemize}
+
+\textbf{\uline{โจทย์}}\; จงหา\uline{จำนวนรูปแบบ}ทั้งหมดของ input array \lstinline|A| 
+ที่มีจำนวนสมาชิก 20 ตัวที่ทำให้ \lstinline|validate_array(A)| คืนค่าออกมาเป็น \lstinline|true|?

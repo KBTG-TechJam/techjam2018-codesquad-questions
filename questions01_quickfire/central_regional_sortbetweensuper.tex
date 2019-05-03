@@ -1,0 +1,26 @@
+\question{}
+
+กำหนดให้มีฟังก์ชันหนึ่ง \lstinline{sort_between(L, p, q)} 
+ซึ่งมีสเปกเหมือนกับคำถามที่แล้ว (ดู\autoref{q:quickfire_central_audition_sortbetweenintro})
+
+เราจะนำฟังก์ชัน \lstinline{sort_between} ดังกล่าวนี้มาใช้งานเพื่อเขียนฟังก์ชันใหม่ที่มีชื่อว่า
+\lstinline{slider_sort_between} ซึ่งมีกระบวนการทำงานดังต่อไปนี้
+\begin{lstlisting}
+function slider_sort_between(L, k):
+    n := L.length()
+    for i := 0 to n-k do:
+        # <%\codecmt เรียงลำดับจำนวนที่ติดกัน%> k <%\codecmt จำนวนใน%> array L
+        # <%\codecmt ตั้งแต่ตำแหน่งที่%> i <%\codecmt จนถึงตำแหน่งที่%> i-k+1
+        sort_inplace(L, i, i+k-1)
+    end
+end
+\end{lstlisting}
+
+สมมติว่าเรามี array \lstinline{L_1} ซึ่งประกอบไปด้วยจำนวนทั้งสิ้น 250 จำนวน\;
+เป้าหมายคือเราต้องการเรียงลำดับจำนวนทุกจำนวนภายใน array นี้ด้วยการเรียกใช้งานคำสั่ง
+\begin{center}
+    \lstinline{L_1 := slider_sort_between(L_1, k=25)}
+\end{center}
+นี้\uline{ซ้ำ\;ๆ\;กัน}อย่างต่อเนื่อง จนกว่าจำนวนใน array \lstinline{L_1} จะเรียงลำดับทั้งหมด\;
+อยากทราบว่าเราจะต้องรันคำสั่งข้างต้นนี้\uline{อย่างน้อย}กี่รอบ
+จึงเพียงพอที่จะรับประกันว่าค่าทั้งหมดของ array \lstinline{L_1} เรียงลำดับจากน้อยไปมาก?

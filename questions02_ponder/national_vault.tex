@@ -1,0 +1,54 @@
+\question{}
+
+มีตู้เซฟอยู่ตู้หนึ่ง ตู้เซฟนี้ถูกล็อกด้วยหมายเลขปริศนา \lstinline{Q} ซึ่งมีความยาว 6 หลัก 
+(เราเรียก \lstinline{Q} ว่า\emph{\hrsp รหัสผ่านจริง\hrsp})
+
+ทุก ๆ ครั้งที่เราป้อนรหัสเซฟเพื่อเปิดตู้เซฟตู้นี้ หากเราป้อนรหัสไม่ถูกต้อง ตู้เซฟจะมีเสียงร้องพร้อมทั้งยังมีข้อความตอบกลับ
+(response message) ว่า
+\begin{quote}
+    \centering
+    เลขโดดที่อยู่ติดกันที่ยาวที่สุดที่ปรากฏทั้งในรหัสผ่านจริง \lstinline{Q} \\
+    และ\emph{\hrsp รหัสผ่านที่ป้อนผิด\hrsp}นั้นมีความยาวเท่าใด\hrsp%
+    \sidenote{%
+        พูดอีกนัยหนึ่งคือ response message จะเป็นความยาวของ 
+        \textbf{Longest common substring} (\lstinline{LCS})
+        ระหว่างรหัสผ่านจริง \lstinline{Q} กับ\emph{\hrsp รหัสผ่านที่ป้อนผิด\hrsp}
+        
+        \smallskip
+        \textbf{ตัวอย่าง}\; สมมติว่ารหัสผ่านจริงของตู้เซฟคือ 
+        \begin{center}
+            \lstinline{Q = 123456} 
+        \end{center}
+        แต่เราป้อนรหัสตู้เซฟเป็น
+        \begin{center}
+            \lstinline{A = 134579}
+        \end{center}
+        แล้วตู้เซฟจะมี response message ตอบกลับออกมาเป็น
+        \begin{center}
+            \lstinline{LCS(A, Q) = 3}
+        \end{center}
+    }
+\end{quote} 
+
+ต่อไปนี้คือประวัติของการลองป้อนรหัสเซฟแก่ตู้เซฟนี้ทั้งสิ้น 9 ครั้ง พร้อมทั้ง response message ในแต่ละครั้ง
+\begin{center}
+    \smallskip
+    \begin{tabular}{@{\quad}c@{\qquad\qquad}c@{\quad}}
+        \toprule
+        รหัสผ่านที่ป้อน \lstinline|A| & ข้อความตอบกลับ \lstinline|LCS(A, Q)|  \\
+        \midrule
+        \verb|027292| & \verb|1| \\
+        \verb|135135| & \verb|0| \\
+        \verb|257015| & \verb|2| \\
+        \verb|362447| & \verb|1| \\
+        \verb|470619| & \verb|3| \\
+        \verb|560968| & \verb|1| \\
+        \verb|674669| & \verb|1| \\
+        \verb|822642| & \verb|1| \\
+        \verb|903287| & \verb|3| \\
+        \bottomrule
+    \end{tabular}
+    \smallskip
+\end{center}
+
+จงหารหัสผ่านจริง \lstinline{Q} ของตู้เซฟนี้จากข้อมูลข้างต้น

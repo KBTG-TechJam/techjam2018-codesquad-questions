@@ -1,0 +1,165 @@
+\question{\bfseries Rotate Sort (Optimization Problem)}
+
+\begin{quote}
+    \em
+    \vphantom{~}\llap{\adfdownleafleft\;}โจทย์ Coding
+    ข้อนี้ ปรากฏในการแข่งขัน \techjam\ รอบชิงชนะเลิศระดับประเทศ
+    โดยเป็นโจทย์ที่ผู้เข้าแข่งขันจะต้อง optimize เพื่อหาคำตอบที่ดีที่สุดในบรรดาผู้เข้าแข่งขันทั้งหมด
+    หากโปรแกรมของผู้เข้าแข่งขันให้ผลลัพธ์ที่ดีมากเท่าใด ก็จะยิ่งมีโอกาสได้คะแนนสูงมากขึ้นเท่านั้น
+
+    กติการที่ปรากฏในส่วนของ Submission and Scoring นั้นมีนัยยะสำคัญเฉพาะภายในการแข่งขันดังกล่าวเท่านั้น
+    โปรดใช้เนื้อหาดังกล่าวเพื่อการอ้างอิงเท่านั้น
+\end{quote}
+
+\subsection*{\sectionfont\upshape Background}
+
+กำหนดให้ operation ชื่อว่า \lstinline|rotate_3way| รับ input argument อยู่ 3 อย่าง ได้แก่
+\begin{itemize}
+\item array $A$ ของจำนวนเต็ม
+\item ดัชนี $p$ และ $q$ ภายใน array $A$ ซึ่ง $1 \leq p \leq q \leq |A|$ \\
+    (เมื่อ $|A|$ คือความยาวของ array $A$)
+\end{itemize}
+
+เมื่อเรียกใช้งาน \lstinline|rotate_3way(A, p, q)| จะได้ output value เป็น array ที่มีลักษณะเป็นดังนี้
+\begin{fullwidth}
+    \vspace*{-\baselineskip}
+    \[
+        \text{\ttfamily rotate\_3way(A, p, q)} =
+        \left[
+        \underbrace{\text{\ttfamily A[q+1], A[q+2], \ldots, A[N],}}_\text{can be empty}
+        \text{\ttfamily A[p], A[p+1],\ldots,A[q],} 
+        \underbrace{\text{\ttfamily A[1], A[2], \ldots, A[p-1]}}_\text{can be empty}
+        \right]    
+    \]    
+\end{fullwidth}
+
+\noindent
+ยกตัวอย่างเช่น
+\begin{itemize}[itemsep=0pt]
+\item \lstinline{rotate_3way([5, 2, 1, 0], 2, 3) = [0, 2, 1, 5]}
+\item \lstinline{rotate_3way([5, 2, 1, 0], 2, 2) = [1, 0, 2, 5]}
+\item \lstinline{rotate_3way([5, 2, 1, 0], 1, 2) = [1, 0, 5, 2]}
+\item \lstinline{rotate_3way([5, 2, 1, 0], 1, 4) = [5, 2, 1, 0]}
+\end{itemize}
+
+\subsection*{\sectionfont\upshape Problem Statement}
+
+โจทย์ข้อนี้ โปรแกรมของผู้เข้าแข่งขันจะได้รับข้อมูลนำเข้าเป็น array $X$ ของจำนวนเต็มที่ไม่เรียงลำดับ 
+กำหนดให้ $N = |X|$ คือความยาวของ array $X$
+
+เป้าหมายของโปรแกรมของผู้เข้าแข่งขันคือ 
+จะต้องเรียงลำดับจำนวนใน array $X$ โดยเรียกใช้งาน operation \lstinline|rotate_3way| 
+เป็นจำนวนครั้งให้ได้น้อยที่สุดเท่าที่ผู้เข้าแข่งขันสามารถทำได้
+
+กล่าวคือ เมื่อโปรแกรมของผู้เข้าแข่งขันได้รับข้อมูล array $X$ แล้วจะต้องระบุว่าจะเรียกใช้งาน 
+\lstinline|rotate_3way| ทั้งสิ้นกี่ครั้ง และในแต่ละครั้ง จะกำหนดค่าดัชนี $p$ และ $q$ เท่าใด
+ตามลำดับ
+
+สำหรับเกณฑ์การให้คะแนนในข้อนี้ โปรดดูหัวข้อ Submission and Scoring
+
+\subsection*{\sectionfont\upshape Program Specification}
+
+โปรแกรมที่คุณเขียนจะต้องอ่านข้อมูลจาก stardard input 
+และเขียนคำตอบลง standard output โดยข้อมูลจะมีฟอร์แมตดังต่อไปนี้
+
+\bigskip\noindent
+{\sectionfont\bfseries Input Format}
+\begin{itemize}
+\item บรรทัดที่ 1: จะมีจำนวนเต็มหนึ่งจำนวน ระบุ $N$ ซึ่งเป็นความยาวของ array $X$
+\item อีก $N$ บรรทัดถัดมา บรรทัดที่ $i+1$ จะระบุจำนวน $X[i]$ ของ array $X$
+\begin{lstlisting}
+N
+X[1]
+X[2] <%\SuppressNumber\AlternateNumber{...}%>
+     <%\AlternateNumber{N+1}%>
+X[N] <%\ReactivateNumber%>
+\end{lstlisting}
+\end{itemize}
+
+\medskip\noindent
+{\sectionfont\bfseries Output Format}
+\begin{itemize}
+\item บรรทัดที่ 1: จะมีจำนวนเต็ม $K$ หนึ่งจำนวน ระบุจำนวนครั้งที่ operation \lstinline|rotate_3way| 
+    จะถูกเรียกใช้งาน
+\item อีก $K$ บรรทัดถัดมา บรรทัดที่ $j+1$ จะระบุจำนวนเต็มสองจำนวน $p_j$ และ $q_j$ 
+    คั่นด้วยช่องว่ง ซึ่งเป็นดัชนี $p$ และ $q$ ของการเรียกใช้งาน operation \lstinline|rotate_3way| 
+    ครั้งที่ $j$
+\end{itemize}
+
+\subsection*{\sectionfont\upshape Data Example}
+\begin{tabular}{p{0.3\linewidth}p{0.3\linewidth}p{0.3\linewidth}}
+\toprule
+Example Input & Example Output A & Example Output B \\
+\midrule
+\ttfamily\setstretch{0.8}
+4 \newline
+5 \newline
+2 \newline
+1 \newline
+0 &
+\ttfamily\setstretch{0.8}
+3 \newline
+2 2 \newline
+2 2 \newline
+3 4 &
+\ttfamily\setstretch{0.8}
+4 \newline
+2 4 \newline
+2 4 \newline
+3 3 \newline
+3 3 \\
+\bottomrule
+\end{tabular}
+
+\medskip\noindent
+\textbf{อธิบายตัวอย่าง:} สังเกตว่าลำดับของ operation ที่แสดงในทั้งสองคำตอบข้างต้น 
+สามารถทำให้ array  $X$ เรียงลำดับได้ถูกต้อง แต่คำตอบ A ใช้จำนวน operation น้อยกว่า B
+
+\subsection*{\sectionfont\upshape Submission and Scoring}
+
+สำหรับโจทย์ข้อนี้ พึงทราบว่า test case แต่ละอันจะมีคะแนนเต็ม 18 คะแนน นอกจากนั้น 
+คะแนนรวมตอนท้ายสำหรับโจทย์ข้อนี้จะคิดจากค่าเฉลี่ยของคะแนนจากแต่ละ test case
+จึงทำให้คะแนนรวมสูงสุดที่เป็นไปได้สำหรับข้อนี้คือ 18 คะแนน เช่นกัน 
+(เศษทศนิยมของคะแนนจะถูกปัดทิ้งให้เหลือทศนิยม 6 ตำแหน่ง)
+
+\bigskip\noindent
+{\sectionfont\bfseries Minimum requirement} \\
+สำหรับ test case แต่ละอัน โปรแกรมของผู้เข้าแข่งขันจะถือว่าให้ผลลัพธ์ที่\uline{ถูกต้อง} ก็ต่อเมื่อ
+\begin{enumerate}
+\item โปรแกรมให้ผลลัพธ์ตรงกับ Program Specification ที่โจทย์กำหนดให้
+\item ผลลัพธ์ของโปรแกรมเรียกใช้งาน operation \lstinline|rotate_3way| 
+    ที่ทำให้ array $X$ เรียงลำดับจากน้อยไปมากได้ถูกต้อง
+\item ผลลัพธ์ของโปรแกรมเรียกใช้งาน operation \lstinline|rotate_3way| ไม่เกิน $100 N$ ครั้ง
+\end{enumerate}
+
+\noindent
+\textbf{\uline{หมายเหตุ:}} หากโปรแกรมของคุณให้ผลลัพธ์ไม่ถูกต้อง จะได้ 0 คะแนนทันที\newline
+
+\smallskip\noindent
+{\sectionfont\bfseries Scoring scheme for correct answers} \\
+เมื่อโปรแกรมของคุณให้ผลลัพธ์ที่ถูกต้อง กำหนดให้
+
+\begin{itemize}
+\item โปรแกรมของคุณเรียกใช้งาน operation \lstinline|rotate_3way| 
+    เป็นจำนวน $K$ ครั้งสำหรับ test case นี้
+\item ในบรรดาผู้เข้าแข่งขันทั้งหมด จำนวน operation ที่น้อยที่สุดที่มีผู้เข้าแข่งขันทำได้คือ $K^*$ ครั้ง 
+    สำหรับ test case เดียวกัน
+\end{itemize}
+แล้วคะแนนของคุณสำหรับ test case อันนี้จะคำนวณจากสูตรดังต่อไปนี้
+\[
+    \begin{cases}
+    18 &\quad\text{if $K = K^*$} \\
+    6 + 9 \cdot\dfrac{K^*}{K} &\quad\text{if $K > K^*$}
+    \end{cases}
+\]
+
+สังเกตว่าเมื่อโปรแกรมให้ผลลัพธ์ที่ถูกต้อง รับประกันว่าจะได้คะแนนอย่างน้อย 6 คะแนนสำหรับ test case นั้น ๆ\;
+และกำหนดให้เศษที่เกิดขึ้นจากการหาร จะถูกปัดทิ้งให้เหลือทศนิยม 6 ตำแหน่ง
+
+\subsection*{\sectionfont\upshape Constraints}
+
+แต่ละ test case จะมีเงื่อนไขดังต่อไปนี้
+\begin{itemize}
+\item ความยาวของ array $X$ จะสอดคล้องกับเงื่อนไข $2 \leq N \leq 100$
+\item จำนวนที่พบใน array $X$ จะอยู่ในช่วง $0$ ถึง $1000$ ซึ่งอาจมีบางจำนวนซ้ำกันได้
+\end{itemize}

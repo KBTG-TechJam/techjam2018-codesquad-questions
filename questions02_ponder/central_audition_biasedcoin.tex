@@ -1,0 +1,71 @@
+\question{}
+
+กำหนดให้มีเหรียญบาทอยู่เหรียญหนึ่ง เมื่อโยนแต่ละครั้งแล้วจะให้ผลลัพธ์เป็นหัว (head)
+ด้วยความน่าจะเป็น 49\% และเป็นก้อย (tail) ด้วยความน่าจะเป็น 51\%
+
+เป้าหมายของเราคือ เราจะใช้เหรียญบาทดังกล่าวในการเขียนโปรแกรมเพื่อสุ่มตัวเลข 0 หรือ 1 
+อย่างเที่ยงธรรมที่สุดเท่าที่เป็นไปได้ (นั่นคือโอกาสในการออกหัวหรือก้อยต้อง\uline{เท่ากัน}
+หรือ\uline{ใกล้เคียงกันให้มากที่สุด})
+
+โดยโปรแกรมดังกล่าวจะมี API ที่ต่อเข้าถึงการโยนเหรียญบาทข้างต้น ด้วยการเรียกใช้ฟังก์ชัน 
+\lstinline{toss()} ซึ่งจะคืนค่าสตริง \lstinline{"head"} หรือ \lstinline{"tail"} เท่านั้น)
+
+จงเรียงลำดับความยุติธรรมของโปรแกรม A, B, C, D ต่อไปนี้ จากยุติธรรมมากที่สุดไปยังน้อยที่สุด
+
+\newpage
+\begin{fullwidth}
+\begin{itemize}[label={$\triangle$}]
+\item \textbf{โปรแกรม A}
+\begin{lstlisting}
+repeat until terminate
+    count_heads := 0
+    for i := 1 to 100 do:
+        if toss() == "head" then count_heads := count_heads + 1
+    end
+    if count_heads < 49 then
+        output 0 and terminate
+    else if count_heads > 49
+        output 1 and terminate 
+    end
+end
+\end{lstlisting}
+\item \textbf{โปรแกรม B}
+\begin{lstlisting}
+repeat until break
+    result := toss()
+    if result == "tail" then
+        break  # break from loop
+    end
+end
+if toss() := "head" then
+    output 0
+else 
+    output 1 
+end
+terminate
+\end{lstlisting}
+\item \textbf{โปรแกรม C}
+\begin{lstlisting}
+repeat until terminate
+    count_heads := 0
+    if toss() == "head" then count_heads := count_heads + 1
+    if toss() == "head" then count_heads := count_heads + 1
+    if count_heads ≠ 1 then
+        output count_heads/2 and terminate
+    end
+end
+\end{lstlisting}
+\item \textbf{โปรแกรม D}
+\begin{lstlisting}
+repeat until terminate
+    count_heads := 0
+    if toss() == "head" then count_heads := count_heads + 1
+    result := count_heads
+    if toss() == "head" then count_heads := count_heads + 1
+    if count_heads == 1 then
+        output result and terminate
+    end
+end
+\end{lstlisting}
+\end{itemize}
+\end{fullwidth}
