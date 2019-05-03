@@ -12,6 +12,13 @@ It is released under the [Creative Commons Attribution-NonCommercial 4.0 Interna
 LaTeX source files for this document is released under [The LaTeX Project Public License Version 1.3c](LICENSE)
 
 
+## Contributions
+
+Contributions to this document is accepted via Pull Request.
+
+Want to add new content? Please discuss via Issues page first.
+
+
 ## Fonts In This Document
 
 - [Sarabun by Cadson Demak](https://github.com/cadsondemak/Sarabun) under SIL Open Font License
