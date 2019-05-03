@@ -1,7 +1,10 @@
 # TechJam 2018 CODE SQUAD Questions
 
-A compilation of questions from TechJam 2018 Code Squad (organized by KBTG) in the form of a PDF e-book.  
-PDF file can be downloaded under the releases section.
+A compilation of questions from TechJam 2018 Code Squad (organized by KBTG) in the form of a PDF e-book.
+
+## Downloads
+
+PDF file can be downloaded under the releases section above.
 
 
 ## Copyright Notice
@@ -16,7 +19,7 @@ LaTeX source files for this document is released under [The LaTeX Project Public
 
 Contributions to this document is accepted via Pull Request.
 
-Want to add new content? Please discuss via Issues page first.
+Want to add new content? You may want to discuss your ideas with us first via Issues page.
 
 
 ## Fonts In This Document
