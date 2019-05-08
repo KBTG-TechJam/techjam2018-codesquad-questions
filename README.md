@@ -1,31 +1,32 @@
 # TechJam 2018 CODE SQUAD Questions
 
-A compilation of questions from TechJam 2018 Code Squad (organized by KBTG) in the form of a PDF e-book.
-
-## Downloads
-
-PDF file can be downloaded under the releases section above.
+ชุดคำถามที่ใช้แข่งขัน TechJam2018 CODE SQUAD (by KBTG) ในรูปแบบของอีบุ๊ก PDF
 
 
-## Copyright Notice
+## ดาวน์โหลด
 
-Contents in the document is copyrighted by Kasikorn Business-Technology Group.  
-It is released under the [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/).
-
-LaTeX source files for this document is released under [The LaTeX Project Public License Version 1.3c](LICENSE)
+[สามารถดาวน์โหลด PDF เวอร์ชันล่าสุดได้ที่นี่](https://github.com/abhabongse/techjam2018-codesquad-questions/releases)
 
 
-## Contributions
+## ทรัพย์สินทางปัญญา
 
-Contributions to this document is accepted via Pull Request.
+เอกสารในรูปแบบของ PDF รวมถึงเนื้อหาภายในเอกสารกรรมสิทธิ์ของ กสิกร บิซิเนส-เทคโนโลยี กรุ๊ป  
+และถูกเผยแพร่ภายใต้สัญญาอนุญาต [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/)
 
-Want to add new content? You may want to discuss your ideas with us first via Issues page.
+ซอร์สโค้ด LaTeX ที่ใช้สร้างเอกสารฉบับนี้ถูกเผยแพร่ภายใต้สัญญาอนุญาต [The LaTeX Project Public License Version 1.3c](LICENSE)
 
 
-## Fonts In This Document
+## สนับสนุนพัฒนา
 
-- [Sarabun by Cadson Demak](https://github.com/cadsondemak/Sarabun) under SIL Open Font License
-- [Kanit by Cadson Demak](https://github.com/cadsondemak/Kanit) under SIL Open Font License
-- [Fira Mono by Mozilla](https://github.com/mozilla/Fira) under SIL Open Font License
-- [Fira Code by Nikita Prokopov](https://github.com/tonsky/FiraCode) under SIL Open Font License
-- [FiraGO by bBoxType](https://github.com/bBoxType/FiraGO) under SIL Open Font License
+คุณสามารถร่วมสนันสนุนพัฒนาเอกสารฉบับนี้ได้ผ่าน Pull Request
+
+หากคุณอยากเขียนเนื้อหาเสริม โปรดติดต่อผ่านหน้า Issues เพื่อพูดคุยกัน
+
+
+## ฟอนต์ในเอกสาร
+
+- [Sarabun by Cadson Demak](https://github.com/cadsondemak/Sarabun) ภายใต้สัญญาอนุญาต SIL Open Font License
+- [Kanit by Cadson Demak](https://github.com/cadsondemak/Kanit) ภายใต้สัญญาอนุญาต SIL Open Font License
+- [Fira Mono by Mozilla](https://github.com/mozilla/Fira) ภายใต้สัญญาอนุญาต SIL Open Font License
+- [Fira Code by Nikita Prokopov](https://github.com/tonsky/FiraCode) ภายใต้สัญญาอนุญาต SIL Open Font License
+- [FiraGO by bBoxType](https://github.com/bBoxType/FiraGO) ภายใต้สัญญาอนุญาต SIL Open Font License
