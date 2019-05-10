@@ -5,7 +5,8 @@
 
 ## ดาวน์โหลด
 
-[สามารถดาวน์โหลด PDF เวอร์ชันล่าสุดได้ที่นี่](https://github.com/abhabongse/techjam2018-codesquad-questions/releases)
+[สามารถดาวน์โหลด PDF เวอร์ชันล่าสุดได้ที่นี่](https://github.com/abhabongse/techjam2018-codesquad-questions/releases)  
+**หมายเหตุ:** เอกสาร PDF ถูกจัดเรียงให้เหมาะสมกับการพิมพ์บนทั้งสองด้านของกระดาษ A4
 
 
 ## ทรัพย์สินทางปัญญา
